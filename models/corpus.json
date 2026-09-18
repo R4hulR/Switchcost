@@ -1,0 +1,1445 @@
+{
+  "seed": 20260917,
+  "records": [
+    {
+      "id": 0,
+      "text": "A single request schedules the correctness check without dropping any requests.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 1,
+      "text": "The load generator pins its CPU affinity.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 2,
+      "text": "The scheduler rejects the deadline, even during a transition.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 3,
+      "text": "The embedding model pins its CPU affinity, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 4,
+      "text": "This benchmark restarts the transition cost.",
+      "split": "tuning",
+      "n_words": 6
+    },
+    {
+      "id": 5,
+      "text": "A worker process warms up its thread pool.",
+      "split": "tuning",
+      "n_words": 8
+    },
+    {
+      "id": 6,
+      "text": "The scheduler verifies a batch of requests without dropping any requests.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 7,
+      "text": "The system queues its thread pool.",
+      "split": "eval",
+      "n_words": 6
+    },
+    {
+      "id": 8,
+      "text": "This benchmark verifies the deadline before the deadline expires.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 9,
+      "text": "A single request rejects the arrival schedule, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 10,
+      "text": "Our inference server completes a fixed configuration, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 11,
+      "text": "The system completes the deadline, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 12,
+      "text": "Our inference server rejects the deadline without dropping any requests.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 13,
+      "text": "Every worker measures the raw per-request log while background load fluctuates.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 14,
+      "text": "The system measures the incoming traffic without dropping any requests.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 15,
+      "text": "The system pins the arrival schedule under sustained load.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 16,
+      "text": "The embedding model records a fixed configuration while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 17,
+      "text": "The scheduler warms up the arrival schedule.",
+      "split": "eval",
+      "n_words": 7
+    },
+    {
+      "id": 18,
+      "text": "The load generator queues a batch of requests under sustained load.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 19,
+      "text": "The scheduler completes the incoming traffic under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 20,
+      "text": "The embedding model warms up a batch of requests before the deadline expires.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 21,
+      "text": "Our inference server restarts a batch of requests according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 22,
+      "text": "The queue pins a fixed configuration according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 23,
+      "text": "The embedding model processes the deadline according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 24,
+      "text": "The system queues the transition cost while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 25,
+      "text": "The scheduler completes the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 26,
+      "text": "This benchmark queues the tail latency across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 27,
+      "text": "Every worker drains the tail latency once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 28,
+      "text": "A worker process rejects the incoming traffic.",
+      "split": "eval",
+      "n_words": 7
+    },
+    {
+      "id": 29,
+      "text": "The load generator warms up the raw per-request log, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 16
+    },
+    {
+      "id": 30,
+      "text": "The research team drains the arrival schedule without dropping any requests.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 31,
+      "text": "A distributed cache measures the raw per-request log across repeated runs.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 32,
+      "text": "The system warms up the arrival schedule according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 33,
+      "text": "The embedding model warms up the correctness check according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 34,
+      "text": "The scheduler restarts the arrival schedule, even during a transition.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 35,
+      "text": "The embedding model queues the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 36,
+      "text": "The queue queues its thread pool according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 37,
+      "text": "Our inference server verifies the deadline under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 38,
+      "text": "A distributed cache records the transition cost across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 39,
+      "text": "Our inference server measures the tail latency without dropping any requests.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 40,
+      "text": "The load generator records a batch of requests while background load fluctuates.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 41,
+      "text": "A single request warms up its CPU affinity while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 42,
+      "text": "The embedding model completes the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 43,
+      "text": "The system rejects the incoming traffic under sustained load.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 44,
+      "text": "The queue pins a fixed configuration.",
+      "split": "tuning",
+      "n_words": 6
+    },
+    {
+      "id": 45,
+      "text": "The scheduler processes the tail latency across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 46,
+      "text": "A worker process pins the correctness check.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 47,
+      "text": "Every worker measures the deadline under sustained load.",
+      "split": "tuning",
+      "n_words": 8
+    },
+    {
+      "id": 48,
+      "text": "The research team warms up the incoming traffic without dropping any requests.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 49,
+      "text": "The system records the arrival schedule while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 50,
+      "text": "A distributed cache verifies a fixed configuration, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 51,
+      "text": "The embedding model records memory usage according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 52,
+      "text": "The embedding model completes the arrival schedule while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 53,
+      "text": "The research team verifies the incoming traffic once the queue is drained.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 54,
+      "text": "The system queues its thread pool under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 55,
+      "text": "The queue pins the raw per-request log while background load fluctuates.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 56,
+      "text": "The system queues memory usage.",
+      "split": "tuning",
+      "n_words": 5
+    },
+    {
+      "id": 57,
+      "text": "The embedding model records its CPU affinity under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 58,
+      "text": "A single request warms up its CPU affinity before the deadline expires.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 59,
+      "text": "The research team processes a batch of requests, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 15
+    },
+    {
+      "id": 60,
+      "text": "The embedding model measures the tail latency across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 61,
+      "text": "A worker process completes a batch of requests, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 15
+    },
+    {
+      "id": 62,
+      "text": "The embedding model verifies the arrival schedule while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 63,
+      "text": "The queue verifies the arrival schedule across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 64,
+      "text": "The embedding model pins its CPU affinity across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 65,
+      "text": "The embedding model schedules the transition cost according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 66,
+      "text": "Every worker queues memory usage.",
+      "split": "eval",
+      "n_words": 5
+    },
+    {
+      "id": 67,
+      "text": "A distributed cache measures the transition cost, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 68,
+      "text": "The load generator completes a fixed configuration.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 69,
+      "text": "This benchmark rejects memory usage, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 70,
+      "text": "The load generator warms up its CPU affinity, even during a transition.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 71,
+      "text": "Our inference server completes the tail latency according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 72,
+      "text": "Every worker processes the deadline, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 73,
+      "text": "The scheduler warms up a batch of requests once the queue is drained.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 74,
+      "text": "The system processes its CPU affinity before the deadline expires.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 75,
+      "text": "The load generator queues the deadline under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 76,
+      "text": "A distributed cache measures the tail latency once the queue is drained.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 77,
+      "text": "The embedding model completes the deadline before the deadline expires.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 78,
+      "text": "This benchmark drains the deadline across repeated runs.",
+      "split": "eval",
+      "n_words": 8
+    },
+    {
+      "id": 79,
+      "text": "A distributed cache restarts a fixed configuration, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 80,
+      "text": "Our inference server completes its CPU affinity according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 81,
+      "text": "The embedding model verifies a fixed configuration while background load fluctuates.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 82,
+      "text": "The system processes its thread pool once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 83,
+      "text": "Our inference server warms up a batch of requests according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 15
+    },
+    {
+      "id": 84,
+      "text": "The queue verifies the transition cost without dropping any requests.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 85,
+      "text": "The queue processes its CPU affinity according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 86,
+      "text": "The scheduler measures the transition cost before the deadline expires.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 87,
+      "text": "Every worker verifies the deadline while background load fluctuates.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 88,
+      "text": "The queue rejects the arrival schedule while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 89,
+      "text": "A single request schedules the arrival schedule under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 90,
+      "text": "Every worker restarts its CPU affinity under sustained load.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 91,
+      "text": "Our inference server rejects the tail latency.",
+      "split": "eval",
+      "n_words": 7
+    },
+    {
+      "id": 92,
+      "text": "A distributed cache rejects its CPU affinity, even during a transition.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 93,
+      "text": "Every worker schedules the transition cost without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 94,
+      "text": "A distributed cache queues memory usage across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 95,
+      "text": "The embedding model measures the tail latency before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 96,
+      "text": "A distributed cache processes the raw per-request log under sustained load.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 97,
+      "text": "The embedding model queues a batch of requests once the queue is drained.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 98,
+      "text": "Our inference server records its CPU affinity according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 99,
+      "text": "A worker process restarts the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 100,
+      "text": "The queue verifies the arrival schedule according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 101,
+      "text": "A distributed cache schedules the arrival schedule according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 102,
+      "text": "The queue measures the tail latency while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 103,
+      "text": "The research team rejects the raw per-request log according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 104,
+      "text": "This benchmark records its thread pool under sustained load.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 105,
+      "text": "This benchmark restarts a batch of requests while background load fluctuates.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 106,
+      "text": "A worker process restarts its thread pool before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 107,
+      "text": "The queue warms up memory usage.",
+      "split": "tuning",
+      "n_words": 6
+    },
+    {
+      "id": 108,
+      "text": "Every worker drains the correctness check according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 109,
+      "text": "Our inference server pins the incoming traffic according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 110,
+      "text": "The research team processes the transition cost under sustained load.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 111,
+      "text": "A distributed cache completes the raw per-request log before the deadline expires.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 112,
+      "text": "A worker process queues the correctness check under sustained load.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 113,
+      "text": "This benchmark completes the tail latency according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 114,
+      "text": "Our inference server pins the correctness check while background load fluctuates.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 115,
+      "text": "Every worker processes the correctness check, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 116,
+      "text": "The load generator restarts its thread pool without dropping any requests.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 117,
+      "text": "Every worker restarts its thread pool according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 118,
+      "text": "A distributed cache warms up its CPU affinity under sustained load.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 119,
+      "text": "The system queues a fixed configuration without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 120,
+      "text": "The queue verifies the correctness check once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 121,
+      "text": "The research team drains a batch of requests according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 122,
+      "text": "A distributed cache completes memory usage across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 123,
+      "text": "The scheduler processes the incoming traffic, even during a transition.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 124,
+      "text": "Our inference server drains a fixed configuration across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 125,
+      "text": "A single request pins the incoming traffic, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 126,
+      "text": "The load generator processes the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 127,
+      "text": "The embedding model queues a batch of requests across repeated runs.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 128,
+      "text": "The system pins the arrival schedule.",
+      "split": "eval",
+      "n_words": 6
+    },
+    {
+      "id": 129,
+      "text": "This benchmark completes a fixed configuration once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 130,
+      "text": "A distributed cache rejects the incoming traffic, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 14
+    },
+    {
+      "id": 131,
+      "text": "Our inference server schedules the raw per-request log according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 132,
+      "text": "The queue completes its thread pool under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 133,
+      "text": "A worker process drains its thread pool.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 134,
+      "text": "The embedding model queues the correctness check.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 135,
+      "text": "The queue verifies memory usage, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 136,
+      "text": "Every worker records a batch of requests without dropping any requests.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 137,
+      "text": "A single request pins the deadline, even during a transition.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 138,
+      "text": "Our inference server measures the tail latency while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 139,
+      "text": "A distributed cache schedules a fixed configuration while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 140,
+      "text": "A worker process measures memory usage without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 141,
+      "text": "The system queues the transition cost, even during a transition.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 142,
+      "text": "A distributed cache restarts the deadline without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 143,
+      "text": "The system pins the arrival schedule according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 144,
+      "text": "The embedding model verifies the tail latency, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 145,
+      "text": "A distributed cache pins the correctness check, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 146,
+      "text": "The queue restarts its CPU affinity once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 147,
+      "text": "The scheduler rejects its thread pool across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 148,
+      "text": "The queue measures the deadline under sustained load.",
+      "split": "eval",
+      "n_words": 8
+    },
+    {
+      "id": 149,
+      "text": "The research team verifies the deadline.",
+      "split": "eval",
+      "n_words": 6
+    },
+    {
+      "id": 150,
+      "text": "The research team rejects its thread pool without dropping any requests.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 151,
+      "text": "The system restarts the correctness check, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 152,
+      "text": "A worker process restarts the arrival schedule, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 153,
+      "text": "The load generator verifies the deadline across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 154,
+      "text": "A worker process records its CPU affinity under sustained load.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 155,
+      "text": "The research team pins the arrival schedule before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 156,
+      "text": "Our inference server schedules memory usage, which is recorded in the raw log.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 157,
+      "text": "The system restarts the transition cost without dropping any requests.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 158,
+      "text": "A single request processes a fixed configuration.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 159,
+      "text": "A single request processes the correctness check before the deadline expires.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 160,
+      "text": "Every worker warms up the correctness check under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 161,
+      "text": "The embedding model measures the deadline, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 162,
+      "text": "This benchmark pins the transition cost once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 163,
+      "text": "A single request completes the incoming traffic according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 164,
+      "text": "The system schedules the raw per-request log once the queue is drained.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 165,
+      "text": "The research team warms up the transition cost, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 15
+    },
+    {
+      "id": 166,
+      "text": "The load generator schedules the deadline across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 167,
+      "text": "A single request warms up the correctness check while background load fluctuates.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 168,
+      "text": "This benchmark verifies the correctness check under sustained load.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 169,
+      "text": "The research team verifies the tail latency under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 170,
+      "text": "The queue restarts memory usage without dropping any requests.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 171,
+      "text": "The embedding model schedules memory usage across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 172,
+      "text": "The load generator rejects the raw per-request log without dropping any requests.",
+      "split": "tuning",
+      "n_words": 12
+    },
+    {
+      "id": 173,
+      "text": "The embedding model processes the transition cost, even during a transition.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 174,
+      "text": "A single request verifies the raw per-request log before the deadline expires.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 175,
+      "text": "Every worker drains the incoming traffic without dropping any requests.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 176,
+      "text": "Our inference server measures the transition cost before the deadline expires.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 177,
+      "text": "The research team drains the transition cost, even during a transition.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 178,
+      "text": "Every worker pins a fixed configuration while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 179,
+      "text": "A distributed cache drains its thread pool once the queue is drained.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 180,
+      "text": "The queue schedules memory usage according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 181,
+      "text": "The load generator rejects the incoming traffic.",
+      "split": "tuning",
+      "n_words": 7
+    },
+    {
+      "id": 182,
+      "text": "A distributed cache restarts the deadline.",
+      "split": "tuning",
+      "n_words": 6
+    },
+    {
+      "id": 183,
+      "text": "A worker process schedules its CPU affinity across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 184,
+      "text": "The load generator records a batch of requests, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 15
+    },
+    {
+      "id": 185,
+      "text": "Every worker completes the incoming traffic once the queue is drained.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 186,
+      "text": "The scheduler schedules a fixed configuration, even during a transition.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 187,
+      "text": "The queue schedules the transition cost under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 188,
+      "text": "Our inference server schedules a fixed configuration according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 189,
+      "text": "The embedding model pins the arrival schedule, even during a transition.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 190,
+      "text": "Every worker verifies the correctness check across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 191,
+      "text": "The research team schedules a fixed configuration while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 192,
+      "text": "The embedding model pins the tail latency according to the frozen arrival schedule.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 193,
+      "text": "A distributed cache queues the raw per-request log once the queue is drained.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 194,
+      "text": "A single request queues the tail latency, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 195,
+      "text": "A single request restarts its thread pool, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 196,
+      "text": "A worker process completes the arrival schedule according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 197,
+      "text": "This benchmark records the incoming traffic across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 198,
+      "text": "A worker process verifies a batch of requests under sustained load.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 199,
+      "text": "The scheduler restarts its thread pool, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 13
+    },
+    {
+      "id": 200,
+      "text": "The load generator warms up the tail latency, even during a transition.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 201,
+      "text": "Our inference server restarts the correctness check across repeated runs.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 202,
+      "text": "The embedding model pins the tail latency under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 203,
+      "text": "This benchmark drains the transition cost while background load fluctuates.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 204,
+      "text": "The research team measures its thread pool according to the frozen arrival schedule.",
+      "split": "tuning",
+      "n_words": 13
+    },
+    {
+      "id": 205,
+      "text": "The scheduler processes the raw per-request log, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 206,
+      "text": "The embedding model schedules the transition cost.",
+      "split": "eval",
+      "n_words": 7
+    },
+    {
+      "id": 207,
+      "text": "The research team pins the raw per-request log across repeated runs.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 208,
+      "text": "Our inference server warms up a fixed configuration across repeated runs.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 209,
+      "text": "A single request drains a batch of requests under sustained load.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 210,
+      "text": "The research team restarts the transition cost without dropping any requests.",
+      "split": "eval",
+      "n_words": 11
+    },
+    {
+      "id": 211,
+      "text": "The queue queues the transition cost once the queue is drained.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 212,
+      "text": "The embedding model rejects its thread pool, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 213,
+      "text": "The system queues the deadline across repeated runs.",
+      "split": "tuning",
+      "n_words": 8
+    },
+    {
+      "id": 214,
+      "text": "A distributed cache schedules the incoming traffic, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 215,
+      "text": "The queue queues the deadline once the queue is drained.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 216,
+      "text": "The research team processes its thread pool, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 14
+    },
+    {
+      "id": 217,
+      "text": "A worker process queues a batch of requests.",
+      "split": "eval",
+      "n_words": 8
+    },
+    {
+      "id": 218,
+      "text": "Our inference server drains the incoming traffic across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 219,
+      "text": "The queue queues the incoming traffic.",
+      "split": "eval",
+      "n_words": 6
+    },
+    {
+      "id": 220,
+      "text": "Every worker measures a fixed configuration before the deadline expires.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 221,
+      "text": "This benchmark processes a batch of requests across repeated runs.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 222,
+      "text": "The queue rejects a fixed configuration while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 223,
+      "text": "Every worker schedules its thread pool across repeated runs.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 224,
+      "text": "The scheduler drains the transition cost while background load fluctuates.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 225,
+      "text": "The embedding model drains a fixed configuration under sustained load.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 226,
+      "text": "A worker process restarts the deadline without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 227,
+      "text": "Our inference server verifies memory usage under sustained load.",
+      "split": "tuning",
+      "n_words": 9
+    },
+    {
+      "id": 228,
+      "text": "The queue processes the tail latency.",
+      "split": "tuning",
+      "n_words": 6
+    },
+    {
+      "id": 229,
+      "text": "The scheduler measures a fixed configuration, even during a transition.",
+      "split": "tuning",
+      "n_words": 10
+    },
+    {
+      "id": 230,
+      "text": "The system completes the raw per-request log.",
+      "split": "eval",
+      "n_words": 7
+    },
+    {
+      "id": 231,
+      "text": "A distributed cache completes the arrival schedule, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 232,
+      "text": "The scheduler rejects the deadline, which is recorded in the raw log.",
+      "split": "eval",
+      "n_words": 12
+    },
+    {
+      "id": 233,
+      "text": "The system schedules its thread pool.",
+      "split": "eval",
+      "n_words": 6
+    },
+    {
+      "id": 234,
+      "text": "The system pins its CPU affinity without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 235,
+      "text": "The embedding model queues the tail latency, even during a transition.",
+      "split": "tuning",
+      "n_words": 11
+    },
+    {
+      "id": 236,
+      "text": "Every worker drains the correctness check before the deadline expires.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 237,
+      "text": "A worker process restarts the incoming traffic across repeated runs.",
+      "split": "eval",
+      "n_words": 10
+    },
+    {
+      "id": 238,
+      "text": "The scheduler verifies its thread pool across repeated runs.",
+      "split": "eval",
+      "n_words": 9
+    },
+    {
+      "id": 239,
+      "text": "The embedding model processes memory usage without dropping any requests.",
+      "split": "eval",
+      "n_words": 10
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "config": "W1T8",
+  "n_trials": 150,
+  "gap_s": 0.15,
+  "generator_affinity_post_fix_violations": [],
+  "input_prep_ms": {
+    "n": 150,
+    "p50": 0.019612499272625428,
+    "p95": 0.02261930003442103,
+    "p99": 0.03072489984333507,
+    "max": 0.04767099926539231,
+    "mean": 0.01989213339887404
+  },
+  "queueing_delay_ms": {
+    "n": 150,
+    "p50": 1.043448500240629,
+    "p95": 1.2907771504615084,
+    "p99": 1.4016306399753369,
+    "max": 1.46190099985688,
+    "mean": 1.0601573733705056,
+    "label": "IPC + queue wake-up overhead, NOT 'pure IPC' -- see decomposition below"
+  },
+  "pickle_roundtrip_only_ms": {
+    "n": 500,
+    "p50": 0.07140549951145658,
+    "p95": 0.10786429993459018,
+    "p99": 0.16866188923813746,
+    "max": 0.4189949995634379,
+    "mean": 0.06722157201875234,
+    "label": "in-process pickle.dumps+loads of one Task object, no queue/pipe/second-process involved -- a lower bound on the serialization component alone"
+  },
+  "e2e_ms_for_reference": {
+    "n": 150,
+    "p50": 13.878022500648513,
+    "p95": 15.974847900179157,
+    "p99": 18.54360272031042,
+    "max": 21.476952000739402,
+    "mean": 14.020084419983808
+  },
+  "method": "single worker, requests sent one-at-a-time with a gap exceeding service time so genuine queueing wait is ~0. queueing_delay_ms (enqueue_ts to execution_start) bundles pickling + pipe transfer + OS wake-up scheduling latency for the blocked worker + unpickling -- these are not separable from that single number alone. pickle_roundtrip_only_ms isolates just the serialization component via an in-process microbenchmark on an identical Task object, as a partial decomposition."
+}

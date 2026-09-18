@@ -1,0 +1,39 @@
+# Virtual environments / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model/tokenizer binaries are reproducible via scripts/export_model.py
+# against the pinned revision in model_card.json -- not committed.
+models/all-MiniLM-L6-v2/model.onnx
+models/all-MiniLM-L6-v2/model.onnx.data
+models/all-MiniLM-L6-v2/tokenizer/
+models/pretokenized/*.npz
+*.bin
+*.safetensors
+*.onnx
+*.onnx.data
+*.log
+
+# Review bundles are a zipped re-packaging of content already tracked
+# elsewhere in this repo (results/, scripts/, docs/) -- reproducible via
+# scripts/make_review_bundle.py, not committed as a binary blob per phase.
+results/bundles/
+*.zip
+
+# Local, un-published working material: full raw per-request logs for every
+# run (only a representative sample is committed, see results/README.md),
+# and any other superseded/bulky material set aside during repo cleanup.
+# Reversible -- nothing here was deleted, only moved out of the tracked tree.
+_local_archive/
+
+# Editor / OS cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/

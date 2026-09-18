@@ -1,0 +1,1430 @@
+{
+  "run_id": "burst_0.1s_W2T4",
+  "run_valid": true,
+  "run_invalid_reasons": [],
+  "git_commit": "f9d15c7c3222750586a4f26b8d9028ee8d2eb375",
+  "config": "W2T4",
+  "workers": 2,
+  "threads_per_worker": 4,
+  "cpu_groups": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "1": {
+      "intra_op_num_threads": 4,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 4,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "trace_file": "models/traces/burst_0.1s.json",
+  "phases": [
+    {
+      "phase_id": "baseline_0",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370009,
+      "start_offset": 0.0,
+      "end_offset": 5.0,
+      "n_requests": 210
+    },
+    {
+      "phase_id": "burst_0",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370010,
+      "start_offset": 5.0,
+      "end_offset": 5.1,
+      "n_requests": 9
+    },
+    {
+      "phase_id": "baseline_1",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370011,
+      "start_offset": 5.1,
+      "end_offset": 10.1,
+      "n_requests": 182
+    },
+    {
+      "phase_id": "burst_1",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370012,
+      "start_offset": 10.1,
+      "end_offset": 10.2,
+      "n_requests": 11
+    },
+    {
+      "phase_id": "baseline_2",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370013,
+      "start_offset": 10.2,
+      "end_offset": 15.2,
+      "n_requests": 210
+    },
+    {
+      "phase_id": "burst_2",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370014,
+      "start_offset": 15.2,
+      "end_offset": 15.299999999999999,
+      "n_requests": 17
+    },
+    {
+      "phase_id": "baseline_3",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370015,
+      "start_offset": 15.299999999999999,
+      "end_offset": 20.299999999999997,
+      "n_requests": 193
+    },
+    {
+      "phase_id": "burst_3",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370016,
+      "start_offset": 20.299999999999997,
+      "end_offset": 20.4,
+      "n_requests": 9
+    },
+    {
+      "phase_id": "baseline_4",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370017,
+      "start_offset": 20.4,
+      "end_offset": 25.4,
+      "n_requests": 193
+    },
+    {
+      "phase_id": "burst_4",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370018,
+      "start_offset": 25.4,
+      "end_offset": 25.5,
+      "n_requests": 18
+    },
+    {
+      "phase_id": "baseline_5",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370019,
+      "start_offset": 25.5,
+      "end_offset": 30.5,
+      "n_requests": 209
+    },
+    {
+      "phase_id": "burst_5",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370020,
+      "start_offset": 30.5,
+      "end_offset": 30.6,
+      "n_requests": 14
+    },
+    {
+      "phase_id": "baseline_6",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370021,
+      "start_offset": 30.6,
+      "end_offset": 35.6,
+      "n_requests": 206
+    },
+    {
+      "phase_id": "burst_6",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370022,
+      "start_offset": 35.6,
+      "end_offset": 35.7,
+      "n_requests": 12
+    },
+    {
+      "phase_id": "baseline_7",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370023,
+      "start_offset": 35.7,
+      "end_offset": 40.7,
+      "n_requests": 205
+    },
+    {
+      "phase_id": "burst_7",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370024,
+      "start_offset": 40.7,
+      "end_offset": 40.800000000000004,
+      "n_requests": 4
+    },
+    {
+      "phase_id": "baseline_8",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370025,
+      "start_offset": 40.800000000000004,
+      "end_offset": 45.800000000000004,
+      "n_requests": 206
+    },
+    {
+      "phase_id": "burst_8",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370026,
+      "start_offset": 45.800000000000004,
+      "end_offset": 45.900000000000006,
+      "n_requests": 11
+    },
+    {
+      "phase_id": "baseline_9",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370027,
+      "start_offset": 45.900000000000006,
+      "end_offset": 50.900000000000006,
+      "n_requests": 197
+    },
+    {
+      "phase_id": "burst_9",
+      "rate_hz": 130.0,
+      "duration_s": 0.1,
+      "seed": 41370028,
+      "start_offset": 50.900000000000006,
+      "end_offset": 51.00000000000001,
+      "n_requests": 9
+    },
+    {
+      "phase_id": "baseline_10",
+      "rate_hz": 40.0,
+      "duration_s": 5.0,
+      "seed": 41370029,
+      "start_offset": 51.00000000000001,
+      "end_offset": 56.00000000000001,
+      "n_requests": 173
+    }
+  ],
+  "rate_hz_nominal": null,
+  "duration_s_nominal": 56.00000000000001,
+  "last_arrival_offset_s": 55.99656546940426,
+  "achieved_arrival_rate_hz_over_nominal_duration": 41.03571428571428,
+  "arrival": "poisson",
+  "seed": 1,
+  "split": "eval",
+  "n_requests": 2298,
+  "queue_capacity": 3000,
+  "max_queue_wait_s": 5.0,
+  "drain_timeout_s": 15.0,
+  "orderly_shutdown": true,
+  "collection_confirmed": true,
+  "worker_exit_codes": {
+    "0": 0,
+    "1": 0
+  },
+  "sentinel_insertion_failures": 0,
+  "outcome_counts": {
+    "COMPLETED": 2298
+  },
+  "outcome_counts_by_phase": {
+    "baseline_0": {
+      "COMPLETED": 210
+    },
+    "burst_0": {
+      "COMPLETED": 9
+    },
+    "baseline_1": {
+      "COMPLETED": 182
+    },
+    "burst_1": {
+      "COMPLETED": 11
+    },
+    "baseline_2": {
+      "COMPLETED": 210
+    },
+    "burst_2": {
+      "COMPLETED": 17
+    },
+    "baseline_3": {
+      "COMPLETED": 193
+    },
+    "burst_3": {
+      "COMPLETED": 9
+    },
+    "baseline_4": {
+      "COMPLETED": 193
+    },
+    "burst_4": {
+      "COMPLETED": 18
+    },
+    "baseline_5": {
+      "COMPLETED": 209
+    },
+    "burst_5": {
+      "COMPLETED": 14
+    },
+    "baseline_6": {
+      "COMPLETED": 206
+    },
+    "burst_6": {
+      "COMPLETED": 12
+    },
+    "baseline_7": {
+      "COMPLETED": 205
+    },
+    "burst_7": {
+      "COMPLETED": 4
+    },
+    "baseline_8": {
+      "COMPLETED": 206
+    },
+    "burst_8": {
+      "COMPLETED": 11
+    },
+    "baseline_9": {
+      "COMPLETED": 197
+    },
+    "burst_9": {
+      "COMPLETED": 9
+    },
+    "baseline_10": {
+      "COMPLETED": 173
+    }
+  },
+  "percentile_method": "linear",
+  "latency_ms_by_phase": {
+    "baseline_0": {
+      "e2e": {
+        "n": 210,
+        "p50": 12.534699631942203,
+        "p95": 19.16061006322706,
+        "p99": 29.091788780387997,
+        "max": 34.15488616519724,
+        "mean": 13.150979632995412
+      },
+      "queueing_delay": {
+        "n": 210,
+        "p50": 0.693331001457409,
+        "p95": 7.371189801415311,
+        "p99": 18.258111837967565,
+        "max": 22.646967001492158,
+        "mean": 1.6619524522823104
+      },
+      "service_time": {
+        "n": 210,
+        "p50": 11.359453998011304,
+        "p95": 14.049644549595541,
+        "p99": 17.735323880369826,
+        "max": 21.396070002083434,
+        "mean": 11.350656976321174
+      }
+    },
+    "burst_0": {
+      "e2e": {
+        "n": 9,
+        "p50": 9.976306024327641,
+        "p95": 13.577414437168045,
+        "p99": 13.582670742616756,
+        "max": 13.583984818978934,
+        "mean": 10.971731504266952
+      },
+      "queueing_delay": {
+        "n": 9,
+        "p50": 0.5013570007577073,
+        "p95": 2.0887408005364696,
+        "p99": 2.804381760797696,
+        "max": 2.9832920008630026,
+        "mean": 0.7876466669485025
+      },
+      "service_time": {
+        "n": 9,
+        "p50": 9.29534699753276,
+        "p95": 12.861779600643786,
+        "p99": 12.955890319572063,
+        "max": 12.979417999304133,
+        "mean": 10.068785333310693
+      }
+    },
+    "baseline_1": {
+      "e2e": {
+        "n": 182,
+        "p50": 13.065414130323916,
+        "p95": 16.76998086113599,
+        "p99": 20.919971625371534,
+        "max": 24.646522804687265,
+        "mean": 12.841914975549546
+      },
+      "queueing_delay": {
+        "n": 182,
+        "p50": 0.6818590009061154,
+        "p95": 4.932338850449001,
+        "p99": 8.357694109326978,
+        "max": 15.311127001041314,
+        "mean": 1.1239329449801096
+      },
+      "service_time": {
+        "n": 182,
+        "p50": 11.551143499673344,
+        "p95": 14.24518869844178,
+        "p99": 16.048301258160787,
+        "max": 23.169455998868216,
+        "mean": 11.570795412138738
+      }
+    },
+    "burst_1": {
+      "e2e": {
+        "n": 11,
+        "p50": 13.102929191518342,
+        "p95": 16.39891741251631,
+        "p99": 16.59023449938104,
+        "max": 16.638063771097222,
+        "mean": 13.283342093266334
+      },
+      "queueing_delay": {
+        "n": 11,
+        "p50": 0.7863079990784172,
+        "p95": 6.776702000934165,
+        "p99": 7.2675108021940105,
+        "max": 7.390213002508972,
+        "mean": 2.414971999810818
+      },
+      "service_time": {
+        "n": 11,
+        "p50": 10.221537999314023,
+        "p95": 12.665018000916461,
+        "p99": 12.685657999463729,
+        "max": 12.690817999100545,
+        "mean": 10.739767544939902
+      }
+    },
+    "baseline_2": {
+      "e2e": {
+        "n": 210,
+        "p50": 12.244235302205198,
+        "p95": 17.368962178443322,
+        "p99": 25.479776898173423,
+        "max": 36.77892517953296,
+        "mean": 12.633930691178344
+      },
+      "queueing_delay": {
+        "n": 210,
+        "p50": 0.6736729992553592,
+        "p95": 3.2766121998065465,
+        "p99": 9.432807571793088,
+        "max": 19.284281999716768,
+        "mean": 1.098398562109131
+      },
+      "service_time": {
+        "n": 210,
+        "p50": 11.22882650088286,
+        "p95": 14.553215099294897,
+        "p99": 18.643968018113807,
+        "max": 29.053071000817,
+        "mean": 11.398778714040722
+      }
+    },
+    "burst_2": {
+      "e2e": {
+        "n": 17,
+        "p50": 35.28643149547861,
+        "p95": 46.68857346914592,
+        "p99": 47.20119578225422,
+        "max": 47.32935136053129,
+        "mean": 33.774578896340884
+      },
+      "queueing_delay": {
+        "n": 17,
+        "p50": 20.854236998275155,
+        "p95": 34.74838259789976,
+        "p99": 35.76953332099947,
+        "max": 36.0248210017744,
+        "mean": 19.421381470344976
+      },
+      "service_time": {
+        "n": 17,
+        "p50": 13.893087998440024,
+        "p95": 18.37762619907153,
+        "p99": 19.000257240404608,
+        "max": 19.155915000737878,
+        "mean": 14.171589117990258
+      }
+    },
+    "baseline_3": {
+      "e2e": {
+        "n": 193,
+        "p50": 12.346849121968262,
+        "p95": 18.23568907275328,
+        "p99": 21.966099408746228,
+        "max": 25.982056140492205,
+        "mean": 12.787636436175626
+      },
+      "queueing_delay": {
+        "n": 193,
+        "p50": 0.7256190001498908,
+        "p95": 4.0917663987783905,
+        "p99": 8.668187719304113,
+        "max": 11.840371000289451,
+        "mean": 1.1186166062694431
+      },
+      "service_time": {
+        "n": 193,
+        "p50": 11.276322002231609,
+        "p95": 14.64458079935866,
+        "p99": 19.66518687884672,
+        "max": 25.160805002087727,
+        "mean": 11.522959678751565
+      }
+    },
+    "burst_3": {
+      "e2e": {
+        "n": 9,
+        "p50": 13.348906835744856,
+        "p95": 18.520818229444558,
+        "p99": 19.435366680991137,
+        "max": 19.664003793877782,
+        "mean": 13.699398412023179
+      },
+      "queueing_delay": {
+        "n": 9,
+        "p50": 0.7806389985489659,
+        "p95": 7.7993285987759,
+        "p99": 8.878812118782662,
+        "max": 9.148682998784352,
+        "mean": 2.5902737773625026
+      },
+      "service_time": {
+        "n": 9,
+        "p50": 10.870990001421887,
+        "p95": 12.78782359950128,
+        "p99": 12.840545518993167,
+        "max": 12.853725998866139,
+        "mean": 10.945788000147635
+      }
+    },
+    "baseline_4": {
+      "e2e": {
+        "n": 193,
+        "p50": 12.143096137151588,
+        "p95": 16.181670038349694,
+        "p99": 21.589954948140075,
+        "max": 21.71017526779906,
+        "mean": 12.410654267967242
+      },
+      "queueing_delay": {
+        "n": 193,
+        "p50": 0.7072890002746135,
+        "p95": 5.688252599065872,
+        "p99": 8.96241124006336,
+        "max": 10.529502000281354,
+        "mean": 1.1983831604828676
+      },
+      "service_time": {
+        "n": 193,
+        "p50": 10.768174000986619,
+        "p95": 14.245080199907534,
+        "p99": 14.617076240683662,
+        "max": 15.286013996956171,
+        "mean": 11.060616818674836
+      }
+    },
+    "burst_4": {
+      "e2e": {
+        "n": 18,
+        "p50": 16.46059931590571,
+        "p95": 24.573371004044017,
+        "p99": 25.706574451869525,
+        "max": 25.989875313825905,
+        "mean": 17.280166944652187
+      },
+      "queueing_delay": {
+        "n": 18,
+        "p50": 6.832174498413224,
+        "p95": 15.275028199539518,
+        "p99": 16.323321638628837,
+        "max": 16.58539499840117,
+        "mean": 7.105164944126348
+      },
+      "service_time": {
+        "n": 18,
+        "p50": 9.335852500953479,
+        "p95": 12.84764499978337,
+        "p99": 13.090037798028789,
+        "max": 13.150635997590143,
+        "mean": 10.00474611141221
+      }
+    },
+    "baseline_5": {
+      "e2e": {
+        "n": 209,
+        "p50": 12.585651034896728,
+        "p95": 15.799134825647341,
+        "p99": 18.077688792691333,
+        "max": 21.731730339524802,
+        "mean": 12.413404351540365
+      },
+      "queueing_delay": {
+        "n": 209,
+        "p50": 0.6951030009076931,
+        "p95": 4.26350460184039,
+        "p99": 6.794059318053759,
+        "max": 10.408953003206989,
+        "mean": 1.0312138181593342
+      },
+      "service_time": {
+        "n": 209,
+        "p50": 11.155776999657974,
+        "p95": 14.021266000781907,
+        "p99": 14.970321879227408,
+        "max": 17.5293860011152,
+        "mean": 11.236085114911763
+      }
+    },
+    "burst_5": {
+      "e2e": {
+        "n": 14,
+        "p50": 14.365372771862894,
+        "p95": 23.663569434938836,
+        "p99": 24.962927372762348,
+        "max": 25.28776685721823,
+        "mean": 14.982826736481261
+      },
+      "queueing_delay": {
+        "n": 14,
+        "p50": 2.911519501139992,
+        "p95": 13.096281700200052,
+        "p99": 13.851239539872038,
+        "max": 14.039978999790037,
+        "mean": 4.361487714049872
+      },
+      "service_time": {
+        "n": 14,
+        "p50": 10.231626498352853,
+        "p95": 13.005977498505672,
+        "p99": 13.407849098839506,
+        "max": 13.508316998922965,
+        "mean": 10.448705071342244
+      }
+    },
+    "baseline_6": {
+      "e2e": {
+        "n": 206,
+        "p50": 12.020575377391651,
+        "p95": 15.50751811646478,
+        "p99": 17.101419033497216,
+        "max": 26.488675135624362,
+        "mean": 12.234443818440534
+      },
+      "queueing_delay": {
+        "n": 206,
+        "p50": 0.6661875013378449,
+        "p95": 2.4820244989314233,
+        "p99": 5.583188250238887,
+        "max": 5.917550999583909,
+        "mean": 0.8653824078314711
+      },
+      "service_time": {
+        "n": 206,
+        "p50": 10.897179499806953,
+        "p95": 14.316774750113836,
+        "p99": 15.304370448029657,
+        "max": 25.512293999781832,
+        "mean": 11.231047422273335
+      }
+    },
+    "burst_6": {
+      "e2e": {
+        "n": 12,
+        "p50": 10.681574087357149,
+        "p95": 16.530496145605866,
+        "p99": 17.463192295144836,
+        "max": 17.69636633252958,
+        "mean": 11.883831073646434
+      },
+      "queueing_delay": {
+        "n": 12,
+        "p50": 0.5898670005990425,
+        "p95": 4.146675700394548,
+        "p99": 7.2331111421954155,
+        "max": 8.004720002645627,
+        "mean": 1.247401916164866
+      },
+      "service_time": {
+        "n": 12,
+        "p50": 9.464710499742068,
+        "p95": 14.078243551375635,
+        "p99": 14.414376710810757,
+        "max": 14.498410000669537,
+        "mean": 10.498676167723412
+      }
+    },
+    "baseline_7": {
+      "e2e": {
+        "n": 205,
+        "p50": 12.471606696635718,
+        "p95": 15.76326234426233,
+        "p99": 18.98151700093878,
+        "max": 21.130442266439786,
+        "mean": 12.489928383268019
+      },
+      "queueing_delay": {
+        "n": 205,
+        "p50": 0.7158789994718973,
+        "p95": 3.560194400051834,
+        "p99": 9.557880159118225,
+        "max": 11.153371997352224,
+        "mean": 1.0944696048327165
+      },
+      "service_time": {
+        "n": 205,
+        "p50": 11.231454998778645,
+        "p95": 13.94376720127184,
+        "p99": 14.63292383850785,
+        "max": 14.94003300103941,
+        "mean": 11.251254639163806
+      }
+    },
+    "burst_7": {
+      "e2e": {
+        "n": 4,
+        "p50": 12.678501268965192,
+        "p95": 13.974281780792808,
+        "p99": 14.042375334938697,
+        "max": 14.05939872347517,
+        "mean": 12.692627853539307
+      },
+      "queueing_delay": {
+        "n": 4,
+        "p50": 0.6415725001716055,
+        "p95": 0.6704429511955823,
+        "p99": 0.6739285913863569,
+        "max": 0.6748000014340505,
+        "mean": 0.6254045001696795
+      },
+      "service_time": {
+        "n": 4,
+        "p50": 11.896229500052868,
+        "p95": 13.080669749979279,
+        "p99": 13.146193950015004,
+        "max": 13.162575000023935,
+        "mean": 11.888210749930295
+      }
+    },
+    "baseline_8": {
+      "e2e": {
+        "n": 206,
+        "p50": 12.092760340237874,
+        "p95": 15.060689085657941,
+        "p99": 16.380966424003415,
+        "max": 20.526321288343752,
+        "mean": 12.077569622403459
+      },
+      "queueing_delay": {
+        "n": 206,
+        "p50": 0.6797319983888883,
+        "p95": 1.1285872496955562,
+        "p99": 5.470970000533268,
+        "max": 10.018592001870275,
+        "mean": 0.8650550823836719
+      },
+      "service_time": {
+        "n": 206,
+        "p50": 10.855427499336656,
+        "p95": 13.734486749854113,
+        "p99": 14.383137298682412,
+        "max": 14.54469800228253,
+        "mean": 11.06713377659122
+      }
+    },
+    "burst_8": {
+      "e2e": {
+        "n": 11,
+        "p50": 10.53724512894405,
+        "p95": 19.082506878476124,
+        "p99": 20.7374637000612,
+        "max": 21.151202905457467,
+        "mean": 12.516457840485435
+      },
+      "queueing_delay": {
+        "n": 11,
+        "p50": 0.6428920023608953,
+        "p95": 9.79224900038389,
+        "p99": 11.296856200715412,
+        "max": 11.67300800079829,
+        "mean": 3.037154818395555
+      },
+      "service_time": {
+        "n": 11,
+        "p50": 9.412129998963792,
+        "p95": 9.681477500635083,
+        "p99": 9.766663499976858,
+        "max": 9.787959999812301,
+        "mean": 9.366030545524238
+      }
+    },
+    "baseline_9": {
+      "e2e": {
+        "n": 197,
+        "p50": 13.025312939134892,
+        "p95": 17.43513072869973,
+        "p99": 25.916618383052985,
+        "max": 28.15083592577139,
+        "mean": 13.208160586616728
+      },
+      "queueing_delay": {
+        "n": 197,
+        "p50": 0.761258001148235,
+        "p95": 6.664796601398847,
+        "p99": 14.942911842081225,
+        "max": 18.884537999838358,
+        "mean": 1.410288639568433
+      },
+      "service_time": {
+        "n": 197,
+        "p50": 11.915741000848357,
+        "p95": 14.344836802047212,
+        "p99": 15.53410884138429,
+        "max": 16.842130000441102,
+        "mean": 11.65034356865344
+      }
+    },
+    "burst_9": {
+      "e2e": {
+        "n": 9,
+        "p50": 13.02541837503668,
+        "p95": 18.726620068628105,
+        "p99": 21.243706651584944,
+        "max": 21.872978297324153,
+        "mean": 13.425037654087646
+      },
+      "queueing_delay": {
+        "n": 9,
+        "p50": 0.7898099975136574,
+        "p95": 7.3343426018254805,
+        "p99": 9.888205321622081,
+        "max": 10.52667100157123,
+        "mean": 2.147216444427613
+      },
+      "service_time": {
+        "n": 9,
+        "p50": 11.203367001144215,
+        "p95": 12.740229798509972,
+        "p99": 12.878709159122081,
+        "max": 12.913328999275109,
+        "mean": 11.142347666464048
+      }
+    },
+    "baseline_10": {
+      "e2e": {
+        "n": 173,
+        "p50": 13.271638374135364,
+        "p95": 17.361590437212733,
+        "p99": 20.688396121258847,
+        "max": 26.476642822672147,
+        "mean": 13.104040988880268
+      },
+      "queueing_delay": {
+        "n": 173,
+        "p50": 0.7267039982252754,
+        "p95": 4.300798200711144,
+        "p99": 9.204236842051614,
+        "max": 12.730757000099402,
+        "mean": 1.1724247169853161
+      },
+      "service_time": {
+        "n": 173,
+        "p50": 12.167387998488266,
+        "p95": 14.40478520016768,
+        "p99": 16.27982079939102,
+        "max": 18.978210999193834,
+        "mean": 11.78074536980177
+      }
+    }
+  },
+  "throughput_by_phase": {
+    "baseline_0": {
+      "n_offered": 210,
+      "n_completed_total": 210,
+      "n_completed_within_phase_window": 209,
+      "rate_per_s_within_phase_window": 41.8,
+      "phase_window_s": 5.0
+    },
+    "burst_0": {
+      "n_offered": 9,
+      "n_completed_total": 9,
+      "n_completed_within_phase_window": 7,
+      "rate_per_s_within_phase_window": 70.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_1": {
+      "n_offered": 182,
+      "n_completed_total": 182,
+      "n_completed_within_phase_window": 181,
+      "rate_per_s_within_phase_window": 36.2,
+      "phase_window_s": 5.0
+    },
+    "burst_1": {
+      "n_offered": 11,
+      "n_completed_total": 11,
+      "n_completed_within_phase_window": 10,
+      "rate_per_s_within_phase_window": 100.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_2": {
+      "n_offered": 210,
+      "n_completed_total": 210,
+      "n_completed_within_phase_window": 210,
+      "rate_per_s_within_phase_window": 42.0,
+      "phase_window_s": 5.0
+    },
+    "burst_2": {
+      "n_offered": 17,
+      "n_completed_total": 17,
+      "n_completed_within_phase_window": 10,
+      "rate_per_s_within_phase_window": 100.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_3": {
+      "n_offered": 193,
+      "n_completed_total": 193,
+      "n_completed_within_phase_window": 193,
+      "rate_per_s_within_phase_window": 38.6,
+      "phase_window_s": 5.0
+    },
+    "burst_3": {
+      "n_offered": 9,
+      "n_completed_total": 9,
+      "n_completed_within_phase_window": 7,
+      "rate_per_s_within_phase_window": 70.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_4": {
+      "n_offered": 193,
+      "n_completed_total": 193,
+      "n_completed_within_phase_window": 192,
+      "rate_per_s_within_phase_window": 38.4,
+      "phase_window_s": 5.0
+    },
+    "burst_4": {
+      "n_offered": 18,
+      "n_completed_total": 18,
+      "n_completed_within_phase_window": 17,
+      "rate_per_s_within_phase_window": 170.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_5": {
+      "n_offered": 209,
+      "n_completed_total": 209,
+      "n_completed_within_phase_window": 209,
+      "rate_per_s_within_phase_window": 41.8,
+      "phase_window_s": 5.0
+    },
+    "burst_5": {
+      "n_offered": 14,
+      "n_completed_total": 14,
+      "n_completed_within_phase_window": 12,
+      "rate_per_s_within_phase_window": 120.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_6": {
+      "n_offered": 206,
+      "n_completed_total": 206,
+      "n_completed_within_phase_window": 206,
+      "rate_per_s_within_phase_window": 41.2,
+      "phase_window_s": 5.0
+    },
+    "burst_6": {
+      "n_offered": 12,
+      "n_completed_total": 12,
+      "n_completed_within_phase_window": 11,
+      "rate_per_s_within_phase_window": 110.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_7": {
+      "n_offered": 205,
+      "n_completed_total": 205,
+      "n_completed_within_phase_window": 204,
+      "rate_per_s_within_phase_window": 40.8,
+      "phase_window_s": 5.0
+    },
+    "burst_7": {
+      "n_offered": 4,
+      "n_completed_total": 4,
+      "n_completed_within_phase_window": 3,
+      "rate_per_s_within_phase_window": 30.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_8": {
+      "n_offered": 206,
+      "n_completed_total": 206,
+      "n_completed_within_phase_window": 206,
+      "rate_per_s_within_phase_window": 41.2,
+      "phase_window_s": 5.0
+    },
+    "burst_8": {
+      "n_offered": 11,
+      "n_completed_total": 11,
+      "n_completed_within_phase_window": 11,
+      "rate_per_s_within_phase_window": 110.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_9": {
+      "n_offered": 197,
+      "n_completed_total": 197,
+      "n_completed_within_phase_window": 196,
+      "rate_per_s_within_phase_window": 39.2,
+      "phase_window_s": 5.0
+    },
+    "burst_9": {
+      "n_offered": 9,
+      "n_completed_total": 9,
+      "n_completed_within_phase_window": 9,
+      "rate_per_s_within_phase_window": 90.0,
+      "phase_window_s": 0.1
+    },
+    "baseline_10": {
+      "n_offered": 173,
+      "n_completed_total": 173,
+      "n_completed_within_phase_window": 172,
+      "rate_per_s_within_phase_window": 34.4,
+      "phase_window_s": 5.0
+    }
+  },
+  "latency_ms": {
+    "e2e": {
+      "n": 2298,
+      "p50": 12.536588987131836,
+      "p95": 17.440489787077244,
+      "p99": 25.972460894336113,
+      "max": 47.32935136053129,
+      "mean": 12.864429214654683
+    },
+    "queueing_delay": {
+      "n": 2298,
+      "p50": 0.7058174996927846,
+      "p95": 5.848588749540801,
+      "p99": 12.977943461592295,
+      "max": 36.0248210017744,
+      "mean": 1.37280863010268,
+      "note": "enqueue_ts to execution_start; includes generator-to-worker IPC transit (pickle/pipe/unpickle/wake), not pure wait -- see docs \u00a79 and scripts/measure_ipc_floor.py for a dedicated unloaded decomposition"
+    },
+    "service_time": {
+      "n": 2298,
+      "p50": 11.290029500742094,
+      "p95": 14.254296398758015,
+      "p99": 16.911341191553237,
+      "max": 29.053071000817,
+      "mean": 11.346716629250247
+    },
+    "generator_delay": {
+      "n": 2298,
+      "p50": 0.13822974142385647,
+      "p95": 0.2565539562056074,
+      "p99": 0.3095392644172535,
+      "max": 0.5936087691225111,
+      "mean": 0.1449039553017547
+    },
+    "input_prep_ms": {
+      "n": 2298,
+      "p50": 0.010940500942524523,
+      "p95": 0.017090498658944853,
+      "p99": 0.02316845977475178,
+      "max": 0.12766299914801493,
+      "mean": 0.011401240669833347
+    }
+  },
+  "throughput": {
+    "completed_within_nominal_window": {
+      "count": 2297,
+      "rate_per_s": 41.01785714285714,
+      "window_s": 56.00000000000001,
+      "definition": "count of COMPLETED with completion_ts <= run_start + duration_s_nominal, divided by duration_s_nominal"
+    },
+    "completed_including_drain": {
+      "count": 2298,
+      "rate_per_s": 41.047875601440666,
+      "window_s": 55.98340879593161,
+      "definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival), includes post-window drain-time completions"
+    }
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 16608.451978718,
+    "generator_finished_scheduling_at_monotonic": 16664.448835235,
+    "first_scheduled_arrival_monotonic": 16608.477132864067,
+    "last_scheduled_arrival_monotonic": 16664.448544187406,
+    "nominal_window_end_monotonic": 16664.451978718,
+    "first_completion_ts_monotonic": 16608.490761304,
+    "last_completion_ts_monotonic": 16664.46054166
+  },
+  "fifo_order_check": null,
+  "generator_affinity_checks": {
+    "pre_loop": {
+      "initial_violations": [
+        {
+          "tid": "36226",
+          "comm": "python",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "36242",
+          "comm": "Thread-1 (colle",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "36243",
+          "comm": "Thread-2 (resou",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_violations": []
+    },
+    "post_loop": {
+      "initial_violations": [],
+      "post_fix_violations": []
+    }
+  },
+  "worker_readiness": {
+    "1": {
+      "pid": 36229,
+      "warmup_ms": 71.99801599927014,
+      "initial_affinity_violations": [
+        {
+          "tid": "36233",
+          "comm": "python",
+          "expected": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 36228,
+      "warmup_ms": 74.1585940013465,
+      "initial_affinity_violations": [
+        {
+          "tid": "36232",
+          "comm": "python",
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "1": 106052,
+      "0": 106052
+    },
+    "peak_observed": {
+      "1": 112772,
+      "0": 113092
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        4.306640625,
+        4.556640625,
+        2.79296875
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29974516,
+        "MemAvailable": 30221716,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        4.5517578125,
+        4.55419921875,
+        2.90380859375
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 30110012,
+        "MemAvailable": 30357896,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement, which itself is now reported as 'IPC + queue wake-up overhead', not 'pure IPC' (round 2 review correction).",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

@@ -1,0 +1,281 @@
+{
+  "run_id": "sweep_W2T4_stress_r2",
+  "git_commit": "d2f63968d6e01cd6cf4dc6eb191cb8a9245316e9",
+  "config": "W2T4",
+  "workers": 2,
+  "threads_per_worker": 4,
+  "cpu_groups": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "1": {
+      "intra_op_num_threads": 4,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 4,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "rate_hz_nominal": 130.0,
+  "duration_s_nominal": 10.0,
+  "duration_s_realized": 9.987008133589937,
+  "achieved_arrival_rate_hz": 126.96495116843406,
+  "arrival": "poisson",
+  "seed": 5003,
+  "split": "eval",
+  "n_requests": 1268,
+  "queue_capacity": 3000,
+  "max_queue_wait_s": 5.0,
+  "drain_timeout_s": 10.0,
+  "orderly_shutdown": true,
+  "collection_confirmed": true,
+  "outcome_counts": {
+    "COMPLETED": 1268
+  },
+  "percentile_method": "linear",
+  "latency_ms": {
+    "e2e": {
+      "n": 1268,
+      "p50": 16.162996405910235,
+      "p95": 35.969222936910185,
+      "p99": 47.45654594600633,
+      "max": 71.31560971811268,
+      "mean": 18.90934685058268
+    },
+    "queueing_delay": {
+      "n": 1268,
+      "p50": 4.126463500142563,
+      "p95": 23.656421299938298,
+      "p99": 36.08482624987115,
+      "max": 60.209461000340525,
+      "mean": 7.541345448737896,
+      "note": "includes generator-to-worker IPC transit, not pure wait -- see docs \u00a79"
+    },
+    "service_time": {
+      "n": 1268,
+      "p50": 10.86982450033247,
+      "p95": 13.434397650189565,
+      "p99": 14.67059313042227,
+      "max": 24.914581999837537,
+      "mean": 11.09016642663912
+    },
+    "generator_delay": {
+      "n": 1268,
+      "p50": 0.1448021384931053,
+      "p95": 1.1664577570172665,
+      "p99": 1.972260258025919,
+      "max": 4.577854094350187,
+      "mean": 0.2778349752056626
+    }
+  },
+  "throughput": {
+    "completed_per_s": 126.56104506471956,
+    "window_s": 10.01888060699548,
+    "window_definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival)"
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 6253.360490117,
+    "generator_finished_scheduling_at_monotonic": 6263.348715403,
+    "first_scheduled_arrival_monotonic": 6253.361826547005,
+    "last_scheduled_arrival_monotonic": 6263.34749825059,
+    "first_completion_ts_monotonic": 6253.379009817,
+    "last_completion_ts_monotonic": 6263.380707154
+  },
+  "fifo_order_check": null,
+  "worker_readiness": {
+    "1": {
+      "pid": 16089,
+      "warmup_ms": 77.54481099982513,
+      "initial_affinity_violations": [
+        {
+          "tid": "16090",
+          "comm": "python",
+          "expected": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 16088,
+      "warmup_ms": 105.27045999970142,
+      "initial_affinity_violations": [
+        {
+          "tid": "16091",
+          "comm": "python",
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "1": 105412,
+      "0": 106172
+    },
+    "peak_observed": {
+      "1": 111492,
+      "0": 112572
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        4.72802734375,
+        3.77734375,
+        2.2265625
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29861908,
+        "MemAvailable": 30253240,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        5.22509765625,
+        3.91650390625,
+        2.2890625
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29991260,
+        "MemAvailable": 30382880,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement.",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

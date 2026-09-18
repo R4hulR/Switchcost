@@ -1,0 +1,23 @@
+{
+  "repo_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "revision_resolved_at": "2026-09-17T07:31:55.742494+00:00",
+  "opset": 17,
+  "input_names": [
+    "input_ids",
+    "token_type_ids",
+    "attention_mask"
+  ],
+  "output_names": [
+    "last_hidden_state"
+  ],
+  "hidden_size": 384,
+  "max_position_embeddings": 512,
+  "versions": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "onnx": "1.22.0",
+    "onnxruntime": "1.30.0"
+  }
+}

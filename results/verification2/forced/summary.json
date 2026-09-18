@@ -1,0 +1,913 @@
+{
+  "run_id": "W8T1_r500_poisson_seed1_1789636413",
+  "run_valid": true,
+  "run_invalid_reasons": [],
+  "git_commit": "ed228617936895098470ef8bce00bb96f0e46b28",
+  "config": "W8T1",
+  "workers": 8,
+  "threads_per_worker": 1,
+  "cpu_groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "2": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "3": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "6": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "1": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "5": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "4": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "7": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "rate_hz_nominal": 500.0,
+  "duration_s_nominal": 3.0,
+  "last_arrival_offset_s": 2.998840079907633,
+  "achieved_arrival_rate_hz_over_nominal_duration": 488.0,
+  "arrival": "poisson",
+  "seed": 1,
+  "split": "eval",
+  "n_requests": 1464,
+  "queue_capacity": 2000,
+  "max_queue_wait_s": 30.0,
+  "drain_timeout_s": 0.01,
+  "orderly_shutdown": false,
+  "collection_confirmed": false,
+  "worker_exit_codes": {
+    "0": -15,
+    "1": -15,
+    "2": -15,
+    "3": -15,
+    "4": -15,
+    "5": -15,
+    "6": -15,
+    "7": -15
+  },
+  "sentinel_insertion_failures": 0,
+  "outcome_counts": {
+    "COMPLETED": 831,
+    "INTERRUPTED": 8,
+    "UNFINISHED": 625
+  },
+  "percentile_method": "linear",
+  "latency_ms": {
+    "e2e": {
+      "n": 831,
+      "p50": 759.7396089804533,
+      "p95": 1343.252905702684,
+      "p99": 1370.7166783624418,
+      "max": 1394.142669350913,
+      "mean": 733.6305467255286
+    },
+    "queueing_delay": {
+      "n": 831,
+      "p50": 732.0956430012302,
+      "p95": 1317.8336794999268,
+      "p99": 1347.897740998815,
+      "max": 1371.8913220000104,
+      "mean": 704.6668857833818,
+      "note": "enqueue_ts to execution_start; includes generator-to-worker IPC transit (pickle/pipe/unpickle/wake), not pure wait -- see docs \u00a79 and scripts/measure_ipc_floor.py for a dedicated unloaded decomposition"
+    },
+    "service_time": {
+      "n": 831,
+      "p50": 26.19972200045595,
+      "p95": 42.19619300056365,
+      "p99": 43.43649460006418,
+      "max": 45.38401799982239,
+      "mean": 28.789043793071777
+    },
+    "generator_delay": {
+      "n": 1464,
+      "p50": 0.1460018138459418,
+      "p95": 0.3958948995204987,
+      "p99": 1.0208411622625093,
+      "max": 1.7800550540414406,
+      "mean": 0.1794615484513351
+    },
+    "input_prep_ms": {
+      "n": 1464,
+      "p50": 0.008261000402853824,
+      "p95": 0.020175300232949667,
+      "p99": 0.039435230919480084,
+      "max": 0.23397899894916918,
+      "mean": 0.009998713131692871
+    }
+  },
+  "throughput": {
+    "completed_within_nominal_window": {
+      "count": 812,
+      "rate_per_s": 270.6666666666667,
+      "window_s": 3.0,
+      "definition": "count of COMPLETED with completion_ts <= run_start + duration_s_nominal, divided by duration_s_nominal"
+    },
+    "completed_including_drain": {
+      "count": 831,
+      "rate_per_s": 270.4315633109655,
+      "window_s": 3.072866161870479,
+      "definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival), includes post-window drain-time completions"
+    }
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 8393.982713035,
+    "generator_finished_scheduling_at_monotonic": 8396.982011459,
+    "first_scheduled_arrival_monotonic": 8393.983001617129,
+    "last_scheduled_arrival_monotonic": 8396.981553114909,
+    "nominal_window_end_monotonic": 8396.982713035,
+    "first_completion_ts_monotonic": 8394.010282905,
+    "last_completion_ts_monotonic": 8397.055867779
+  },
+  "fifo_order_check": null,
+  "generator_affinity_checks": {
+    "pre_loop": {
+      "initial_violations": [
+        {
+          "tid": "20142",
+          "comm": "python",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "20168",
+          "comm": "Thread-1 (colle",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "20169",
+          "comm": "Thread-2 (resou",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_violations": []
+    },
+    "post_loop": {
+      "initial_violations": [],
+      "post_fix_violations": []
+    }
+  },
+  "worker_readiness": {
+    "2": {
+      "pid": 20146,
+      "warmup_ms": 197.9863739998109,
+      "initial_affinity_violations": [
+        {
+          "tid": "20154",
+          "comm": "python",
+          "expected": [
+            2
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "3": {
+      "pid": 20147,
+      "warmup_ms": 196.84555000094406,
+      "initial_affinity_violations": [
+        {
+          "tid": "20155",
+          "comm": "python",
+          "expected": [
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "6": {
+      "pid": 20150,
+      "warmup_ms": 198.69701099923986,
+      "initial_affinity_violations": [
+        {
+          "tid": "20157",
+          "comm": "python",
+          "expected": [
+            6
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "1": {
+      "pid": 20145,
+      "warmup_ms": 200.33129100011138,
+      "initial_affinity_violations": [
+        {
+          "tid": "20152",
+          "comm": "python",
+          "expected": [
+            1
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "5": {
+      "pid": 20149,
+      "warmup_ms": 199.08259499970882,
+      "initial_affinity_violations": [
+        {
+          "tid": "20159",
+          "comm": "python",
+          "expected": [
+            5
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "4": {
+      "pid": 20148,
+      "warmup_ms": 200.34600100007083,
+      "initial_affinity_violations": [
+        {
+          "tid": "20156",
+          "comm": "python",
+          "expected": [
+            4
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 20144,
+      "warmup_ms": 200.87317999968946,
+      "initial_affinity_violations": [
+        {
+          "tid": "20153",
+          "comm": "python",
+          "expected": [
+            0
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "7": {
+      "pid": 20151,
+      "warmup_ms": 205.00134299982165,
+      "initial_affinity_violations": [
+        {
+          "tid": "20158",
+          "comm": "python",
+          "expected": [
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "2": 106052,
+      "3": 106372,
+      "6": 106372,
+      "1": 106032,
+      "5": 106372,
+      "4": 106052,
+      "0": 106052,
+      "7": 106372
+    },
+    "peak_observed": {
+      "2": 111172,
+      "3": 111172,
+      "6": 111172,
+      "1": 111152,
+      "5": 111172,
+      "4": 111172,
+      "0": 110532,
+      "7": 111172
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        1.5107421875,
+        0.51025390625,
+        0.46923828125
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29585136,
+        "MemAvailable": 29790844,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        2.11083984375,
+        0.6513671875,
+        0.51513671875
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 30155972,
+        "MemAvailable": 30361772,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [
+    20144,
+    20145,
+    20146,
+    20147,
+    20148,
+    20149,
+    20150,
+    20151
+  ],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement, which itself is now reported as 'IPC + queue wake-up overhead', not 'pure IPC' (round 2 review correction).",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

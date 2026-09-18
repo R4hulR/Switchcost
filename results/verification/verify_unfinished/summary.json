@@ -1,0 +1,712 @@
+{
+  "run_id": "W8T1_r500_poisson_seed1_1789633510",
+  "git_commit": "d2f63968d6e01cd6cf4dc6eb191cb8a9245316e9",
+  "config": "W8T1",
+  "workers": 8,
+  "threads_per_worker": 1,
+  "cpu_groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "7": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "3": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "1": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "5": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "4": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "2": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "6": {
+      "intra_op_num_threads": 1,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "rate_hz_nominal": 500.0,
+  "duration_s_nominal": 3.0,
+  "duration_s_realized": 2.998840079907633,
+  "achieved_arrival_rate_hz": 488.1887533146124,
+  "arrival": "poisson",
+  "seed": 1,
+  "split": "eval",
+  "n_requests": 1464,
+  "queue_capacity": 2000,
+  "max_queue_wait_s": 30.0,
+  "drain_timeout_s": 0.01,
+  "orderly_shutdown": false,
+  "collection_confirmed": false,
+  "outcome_counts": {
+    "COMPLETED": 988,
+    "INTERRUPTED": 8,
+    "UNFINISHED": 468
+  },
+  "percentile_method": "linear",
+  "latency_ms": {
+    "e2e": {
+      "n": 988,
+      "p50": 526.1263823895206,
+      "p95": 952.1605345324133,
+      "p99": 989.5827903342433,
+      "max": 1005.3647692338927,
+      "mean": 537.002910751839
+    },
+    "queueing_delay": {
+      "n": 988,
+      "p50": 503.30363300008685,
+      "p95": 927.4202427996897,
+      "p99": 964.1861987494212,
+      "max": 979.7504090001894,
+      "mean": 511.84131577126027,
+      "note": "includes generator-to-worker IPC transit, not pure wait -- see docs \u00a79"
+    },
+    "service_time": {
+      "n": 988,
+      "p50": 22.748596500150597,
+      "p95": 36.17482160007057,
+      "p99": 36.59106350952243,
+      "max": 42.27159899983235,
+      "mean": 24.063838090078686
+    },
+    "generator_delay": {
+      "n": 1464,
+      "p50": 0.2702735505408782,
+      "p95": 7.658653831413172,
+      "p99": 17.84129150760235,
+      "max": 20.540344209621253,
+      "mean": 1.5656996086958654
+    }
+  },
+  "throughput": {
+    "completed_per_s": 321.3694124840998,
+    "window_s": 3.0743436108714377,
+    "window_definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival)"
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 5490.92918222,
+    "generator_finished_scheduling_at_monotonic": 5493.928672776,
+    "first_scheduled_arrival_monotonic": 5490.929470802129,
+    "last_scheduled_arrival_monotonic": 5493.928022299908,
+    "first_completion_ts_monotonic": 5490.964834264,
+    "last_completion_ts_monotonic": 5494.003814413
+  },
+  "fifo_order_check": null,
+  "worker_readiness": {
+    "7": {
+      "pid": 12773,
+      "warmup_ms": 178.851463000683,
+      "initial_affinity_violations": [
+        {
+          "tid": "12779",
+          "comm": "python",
+          "expected": [
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "3": {
+      "pid": 12769,
+      "warmup_ms": 178.42803900020954,
+      "initial_affinity_violations": [
+        {
+          "tid": "12777",
+          "comm": "python",
+          "expected": [
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "1": {
+      "pid": 12767,
+      "warmup_ms": 177.94332199991914,
+      "initial_affinity_violations": [
+        {
+          "tid": "12774",
+          "comm": "python",
+          "expected": [
+            1
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 12766,
+      "warmup_ms": 179.86723800004256,
+      "initial_affinity_violations": [
+        {
+          "tid": "12776",
+          "comm": "python",
+          "expected": [
+            0
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "5": {
+      "pid": 12771,
+      "warmup_ms": 177.37067500002013,
+      "initial_affinity_violations": [
+        {
+          "tid": "12778",
+          "comm": "python",
+          "expected": [
+            5
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "4": {
+      "pid": 12770,
+      "warmup_ms": 177.34520599969983,
+      "initial_affinity_violations": [
+        {
+          "tid": "12781",
+          "comm": "python",
+          "expected": [
+            4
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "2": {
+      "pid": 12768,
+      "warmup_ms": 274.87732699955814,
+      "initial_affinity_violations": [
+        {
+          "tid": "12775",
+          "comm": "python",
+          "expected": [
+            2
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "6": {
+      "pid": 12772,
+      "warmup_ms": 262.0895659993039,
+      "initial_affinity_violations": [
+        {
+          "tid": "12780",
+          "comm": "python",
+          "expected": [
+            6
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "7": 106372,
+      "3": 106372,
+      "1": 106372,
+      "0": 106052,
+      "5": 106372,
+      "4": 105732,
+      "2": 106372,
+      "6": 106372
+    },
+    "peak_observed": {
+      "7": 111172,
+      "3": 111172,
+      "1": 111172,
+      "0": 111172,
+      "5": 111172,
+      "4": 110852,
+      "2": 111172,
+      "6": 111172
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        0.67333984375,
+        0.255859375,
+        0.14306640625
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29641980,
+        "MemAvailable": 29844524,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        0.69970703125,
+        0.2685546875,
+        0.14794921875
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 30165296,
+        "MemAvailable": 30368092,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [
+    12766,
+    12767,
+    12768,
+    12769,
+    12770,
+    12771,
+    12772,
+    12773
+  ],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement.",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

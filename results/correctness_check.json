@@ -1,0 +1,593 @@
+{
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "tolerance": {
+    "cosine_sim_min": 0.9999,
+    "max_abs_diff_max": 0.001
+  },
+  "thread_counts_checked": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "overall_pass": true,
+  "overall_n_fail": 0,
+  "sections": [
+    {
+      "name": "edge_case_sentences_threads1",
+      "n_fail": 0,
+      "per_sentence": [
+        {
+          "sentence": "Hello world.",
+          "cosine_similarity": 0.9999998807907104,
+          "max_abs_diff": 2.0302832126617432e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The quick brown fox jumps over the lazy dog.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.601874828338623e-07,
+          "pass": true
+        },
+        {
+          "sentence": "ONNX Runtime is a cross-platform inference engine.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.6391277313232422e-07,
+          "pass": true
+        },
+        {
+          "sentence": "",
+          "cosine_similarity": 0.9999998807907104,
+          "max_abs_diff": 2.384185791015625e-07,
+          "pass": true
+        },
+        {
+          "sentence": "A",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.4901161193847656e-07,
+          "pass": true
+        },
+        {
+          "sentence": "This is a moderately long sentence meant to exercise the middle of the sequence length range without hitting the truncation boundary.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4528632164001465e-07,
+          "pass": true
+        },
+        {
+          "sentence": "In distributed systems, latency percentiles such as p99 often matter more than the mean, because tail latency directly affects the worst-case experience of a meaningful fraction of users, especially under load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.7043203115463257e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Cats sleep a lot.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.3690441846847534e-07,
+          "pass": true
+        },
+        {
+          "sentence": "1234567890 !@#$%^&*()",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.601874828338623e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Multiple    spaces   and\ttabs\nand newlines.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.6763806343078613e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Sentence transformers map sentences to a fixed-size dense vector space that can be used for clustering or semantic search, and this particular sentence is deliberately long enough to approach or exceed a short fixed sequence length so truncation behavior is exercised as well.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.564621925354004e-07,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "corpus_sample_threads1",
+      "n_fail": 0,
+      "per_sentence": [
+        {
+          "sentence": "A single request schedules the correctness check without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server rejects the deadline without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.471489667892456e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The system queues the transition cost while background load fluctuates.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.0617077350616455e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue queues its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.341104507446289e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team warms up the incoming traffic without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1664815247058868e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model measures the tail latency across repeated runs.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker processes the deadline, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.2665987014770508e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the transition cost without dropping any requests.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1548399925231934e-07,
+          "pass": true
+        },
+        {
+          "sentence": "A distributed cache processes the raw per-request log under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker drains the correctness check according to the frozen arrival schedule.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.1734664440155029e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the correctness check once the queue is drained.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue completes its thread pool under sustained load.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2293457984924316e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model verifies the tail latency, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.30385160446167e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server schedules memory usage, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2479722499847412e-07,
+          "pass": true
+        },
+        {
+          "sentence": "This benchmark verifies the correctness check under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.8998980522155762e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue schedules memory usage according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2491364032030106e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model pins the tail latency according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team measures its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team processes its thread pool, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1874362826347351e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue processes the tail latency.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2852251529693604e-07,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "corpus_sample_threads2",
+      "n_fail": 0,
+      "per_sentence": [
+        {
+          "sentence": "A single request schedules the correctness check without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server rejects the deadline without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.471489667892456e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The system queues the transition cost while background load fluctuates.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.0617077350616455e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue queues its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.341104507446289e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team warms up the incoming traffic without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1664815247058868e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model measures the tail latency across repeated runs.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker processes the deadline, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.2665987014770508e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the transition cost without dropping any requests.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1548399925231934e-07,
+          "pass": true
+        },
+        {
+          "sentence": "A distributed cache processes the raw per-request log under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker drains the correctness check according to the frozen arrival schedule.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.1734664440155029e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the correctness check once the queue is drained.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue completes its thread pool under sustained load.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2293457984924316e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model verifies the tail latency, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.30385160446167e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server schedules memory usage, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2479722499847412e-07,
+          "pass": true
+        },
+        {
+          "sentence": "This benchmark verifies the correctness check under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.8998980522155762e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue schedules memory usage according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2491364032030106e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model pins the tail latency according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team measures its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team processes its thread pool, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1874362826347351e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue processes the tail latency.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2852251529693604e-07,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "corpus_sample_threads4",
+      "n_fail": 0,
+      "per_sentence": [
+        {
+          "sentence": "A single request schedules the correctness check without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server rejects the deadline without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.471489667892456e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The system queues the transition cost while background load fluctuates.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.0617077350616455e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue queues its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.341104507446289e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team warms up the incoming traffic without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1664815247058868e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model measures the tail latency across repeated runs.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker processes the deadline, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.2665987014770508e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the transition cost without dropping any requests.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1548399925231934e-07,
+          "pass": true
+        },
+        {
+          "sentence": "A distributed cache processes the raw per-request log under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker drains the correctness check according to the frozen arrival schedule.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.1734664440155029e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the correctness check once the queue is drained.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue completes its thread pool under sustained load.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2293457984924316e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model verifies the tail latency, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.30385160446167e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server schedules memory usage, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2479722499847412e-07,
+          "pass": true
+        },
+        {
+          "sentence": "This benchmark verifies the correctness check under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.8998980522155762e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue schedules memory usage according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2491364032030106e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model pins the tail latency according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team measures its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team processes its thread pool, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1874362826347351e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue processes the tail latency.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2852251529693604e-07,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "corpus_sample_threads8",
+      "n_fail": 0,
+      "per_sentence": [
+        {
+          "sentence": "A single request schedules the correctness check without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server rejects the deadline without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.471489667892456e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The system queues the transition cost while background load fluctuates.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.0617077350616455e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue queues its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.341104507446289e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team warms up the incoming traffic without dropping any requests.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1664815247058868e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model measures the tail latency across repeated runs.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker processes the deadline, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.2665987014770508e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the transition cost without dropping any requests.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1548399925231934e-07,
+          "pass": true
+        },
+        {
+          "sentence": "A distributed cache processes the raw per-request log under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.4156103134155273e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Every worker drains the correctness check according to the frozen arrival schedule.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.1734664440155029e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue verifies the correctness check once the queue is drained.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue completes its thread pool under sustained load.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2293457984924316e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model verifies the tail latency, which is recorded in the raw log.",
+          "cosine_similarity": 0.9999999403953552,
+          "max_abs_diff": 1.30385160446167e-07,
+          "pass": true
+        },
+        {
+          "sentence": "Our inference server schedules memory usage, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2479722499847412e-07,
+          "pass": true
+        },
+        {
+          "sentence": "This benchmark verifies the correctness check under sustained load.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.8998980522155762e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue schedules memory usage according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.2491364032030106e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The embedding model pins the tail latency according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0000001192092896,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team measures its thread pool according to the frozen arrival schedule.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1920928955078125e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The research team processes its thread pool, which is recorded in the raw log.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.1874362826347351e-07,
+          "pass": true
+        },
+        {
+          "sentence": "The queue processes the tail latency.",
+          "cosine_similarity": 1.0,
+          "max_abs_diff": 1.2852251529693604e-07,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

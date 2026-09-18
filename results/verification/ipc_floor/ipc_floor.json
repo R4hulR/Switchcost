@@ -1,0 +1,22 @@
+{
+  "config": "W1T8",
+  "n_trials": 150,
+  "gap_s": 0.15,
+  "ipc_floor_queueing_delay_ms": {
+    "n": 150,
+    "p50": 2.458005500102445,
+    "p95": 2.8083898997920183,
+    "p99": 3.3660062300441447,
+    "max": 8.482496000397077,
+    "mean": 2.5014124533117865
+  },
+  "e2e_ms_for_reference": {
+    "n": 150,
+    "p50": 14.919894999820826,
+    "p95": 16.745745099615306,
+    "p99": 18.266120820044293,
+    "max": 21.016613000028883,
+    "mean": 15.091671580000062
+  },
+  "method": "single worker, requests sent one-at-a-time with a gap exceeding service time so genuine queueing wait is ~0; remaining queueing_delay_ms is attributed to multiprocessing.Queue IPC overhead"
+}

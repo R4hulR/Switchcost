@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-17, before the time-varying (sustained/burst) runs",
+  "frozen_before_seeing": "the sustained low-high-low and burst trace results -- this set is based only on already-collected prior data (results/recheck/recheck_summary.csv), not on the runs it will be applied to",
+  "deadline_ms_set": [25, 50, 100],
+  "rationale": {
+    "25": "tight -- below or near W2T4's low-load p99 (~21-22ms) and W4T2's low-load p99 (~23ms); expected to show real, non-trivial misses for both configs even at low load, and heavy misses under medium/stress -- a stress test of the deadline definition itself.",
+    "50": "moderate -- above every observed p99 except W2T4's stress-load p99 (52.6-75.9ms, i.e. straddles this threshold) and W1T8's stress collapse (already excluded from the W2T4-vs-W4T2 comparison). Chosen specifically because it's expected to separate the two configs: W4T2's stress p99 (27.3-35.6ms) comfortably clears it, W2T4's stress p99 mostly does not.",
+    "100": "loose -- above every observed p99 for both W2T4 and W4T2 across all three recheck rate conditions (max observed was W2T4 stress at 75.9ms); expected near-zero misses for both configs except in the new sustained/burst conditions, which haven't been tested before and may behave differently."
+  },
+  "definition": "A request MISSES its deadline if outcome != COMPLETED (REJECTED, TIMED_OUT, UNFINISHED, INTERRUPTED, UNKNOWN, *_UNCONFIRMED all count as misses), OR outcome == COMPLETED and e2e_latency_ms > deadline_ms. Missed-deadline fraction = n_missed / n_offered, where n_offered is EVERY scheduled request (including rejected/timed-out/etc, per 2026-09-17 review instruction 5) -- never just the completed subset.",
+  "not_selected_after_the_fact": "This set is not adjusted after seeing the sustained/burst results below. If none of the three thresholds turns out informative, that itself is reported as a limitation, not silently patched by adding a fourth threshold chosen to look good."
+}

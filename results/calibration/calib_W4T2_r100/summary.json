@@ -1,0 +1,421 @@
+{
+  "run_id": "calib_W4T2_r100",
+  "git_commit": "d2f63968d6e01cd6cf4dc6eb191cb8a9245316e9",
+  "config": "W4T2",
+  "workers": 4,
+  "threads_per_worker": 2,
+  "cpu_groups": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "3": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "1": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "2": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "rate_hz_nominal": 100.0,
+  "duration_s_nominal": 6.0,
+  "duration_s_realized": 5.988530427866699,
+  "achieved_arrival_rate_hz": 98.52166689418932,
+  "arrival": "poisson",
+  "seed": 100,
+  "split": "tuning",
+  "n_requests": 590,
+  "queue_capacity": 1000,
+  "max_queue_wait_s": 5.0,
+  "drain_timeout_s": 8.0,
+  "orderly_shutdown": true,
+  "collection_confirmed": true,
+  "outcome_counts": {
+    "COMPLETED": 590
+  },
+  "percentile_method": "linear",
+  "latency_ms": {
+    "e2e": {
+      "n": 590,
+      "p50": 16.33432737799012,
+      "p95": 22.77958666286395,
+      "p99": 27.66582644067057,
+      "max": 38.16252534852538,
+      "mean": 17.562870362361522
+    },
+    "queueing_delay": {
+      "n": 590,
+      "p50": 1.7393734997313004,
+      "p95": 5.616321249954122,
+      "p99": 10.712394549627788,
+      "max": 16.50222100033716,
+      "mean": 2.196720306766126,
+      "note": "includes generator-to-worker IPC transit, not pure wait -- see docs \u00a79"
+    },
+    "service_time": {
+      "n": 590,
+      "p50": 13.86627400006546,
+      "p95": 19.478635249561194,
+      "p99": 20.75474540059987,
+      "max": 24.96957899984409,
+      "mean": 15.119699255945429
+    },
+    "generator_delay": {
+      "n": 590,
+      "p50": 0.13109368228469975,
+      "p95": 1.1604253684254209,
+      "p99": 2.6627791660848747,
+      "max": 3.7391319283415214,
+      "mean": 0.24645079964996558
+    }
+  },
+  "throughput": {
+    "completed_per_s": 98.22761515382997,
+    "window_s": 6.006457543288889,
+    "window_definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival)"
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 5705.14430474,
+    "generator_finished_scheduling_at_monotonic": 5711.133534749,
+    "first_scheduled_arrival_monotonic": 5705.145879108711,
+    "last_scheduled_arrival_monotonic": 5711.132835167867,
+    "first_completion_ts_monotonic": 5705.166809455,
+    "last_completion_ts_monotonic": 5711.152336652
+  },
+  "fifo_order_check": null,
+  "worker_readiness": {
+    "3": {
+      "pid": 13535,
+      "warmup_ms": 110.34877600013715,
+      "initial_affinity_violations": [
+        {
+          "tid": "13538",
+          "comm": "python",
+          "expected": [
+            6,
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "1": {
+      "pid": 13533,
+      "warmup_ms": 109.2503569998371,
+      "initial_affinity_violations": [
+        {
+          "tid": "13537",
+          "comm": "python",
+          "expected": [
+            2,
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "2": {
+      "pid": 13534,
+      "warmup_ms": 113.77795699991111,
+      "initial_affinity_violations": [
+        {
+          "tid": "13539",
+          "comm": "python",
+          "expected": [
+            4,
+            5
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 13532,
+      "warmup_ms": 117.63596200034954,
+      "initial_affinity_violations": [
+        {
+          "tid": "13536",
+          "comm": "python",
+          "expected": [
+            0,
+            1
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "3": 106052,
+      "1": 106352,
+      "2": 106052,
+      "0": 106052
+    },
+    "peak_observed": {
+      "3": 111172,
+      "1": 111152,
+      "2": 111172,
+      "0": 110532
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        4.96484375,
+        2.03955078125,
+        0.82080078125
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29880140,
+        "MemAvailable": 30104936,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        4.72705078125,
+        2.03857421875,
+        0.8271484375
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 30157516,
+        "MemAvailable": 30382552,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement.",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

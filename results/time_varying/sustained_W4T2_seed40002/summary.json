@@ -1,0 +1,762 @@
+{
+  "run_id": "sustained_W4T2_seed40002",
+  "run_valid": true,
+  "run_invalid_reasons": [],
+  "git_commit": "f9d15c7c3222750586a4f26b8d9028ee8d2eb375",
+  "config": "W4T2",
+  "workers": 4,
+  "threads_per_worker": 2,
+  "cpu_groups": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "generator_cpus": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "resolved_worker_settings": {
+    "2": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "1": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "0": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "3": {
+      "intra_op_num_threads": 2,
+      "inter_op_num_threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL",
+      "intra_op_allow_spinning": "1",
+      "inter_op_allow_spinning": "1",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  },
+  "trace_file": "models/traces/sustained_seed40002.json",
+  "phases": [
+    {
+      "phase_id": "low1",
+      "rate_hz": 40.0,
+      "duration_s": 50.0,
+      "seed": 40362018,
+      "start_offset": 0.0,
+      "end_offset": 50.0,
+      "n_requests": 1963
+    },
+    {
+      "phase_id": "high",
+      "rate_hz": 130.0,
+      "duration_s": 40.0,
+      "seed": 40362019,
+      "start_offset": 50.0,
+      "end_offset": 90.0,
+      "n_requests": 5248
+    },
+    {
+      "phase_id": "low2",
+      "rate_hz": 40.0,
+      "duration_s": 50.0,
+      "seed": 40362020,
+      "start_offset": 90.0,
+      "end_offset": 140.0,
+      "n_requests": 2093
+    }
+  ],
+  "rate_hz_nominal": null,
+  "duration_s_nominal": 140.0,
+  "last_arrival_offset_s": 139.98770403400724,
+  "achieved_arrival_rate_hz_over_nominal_duration": 66.45714285714286,
+  "arrival": "poisson",
+  "seed": 1,
+  "split": "eval",
+  "n_requests": 9304,
+  "queue_capacity": 3000,
+  "max_queue_wait_s": 5.0,
+  "drain_timeout_s": 15.0,
+  "orderly_shutdown": true,
+  "collection_confirmed": true,
+  "worker_exit_codes": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "sentinel_insertion_failures": 0,
+  "outcome_counts": {
+    "COMPLETED": 9304
+  },
+  "outcome_counts_by_phase": {
+    "low1": {
+      "COMPLETED": 1963
+    },
+    "high": {
+      "COMPLETED": 5248
+    },
+    "low2": {
+      "COMPLETED": 2093
+    }
+  },
+  "percentile_method": "linear",
+  "latency_ms_by_phase": {
+    "low1": {
+      "e2e": {
+        "n": 1963,
+        "p50": 19.088634462605114,
+        "p95": 21.969184124463936,
+        "p99": 25.52687901734316,
+        "max": 36.77720119594596,
+        "mean": 18.304328570687087
+      },
+      "queueing_delay": {
+        "n": 1963,
+        "p50": 0.7684369993512519,
+        "p95": 1.0708520001571742,
+        "p99": 1.2090145804177146,
+        "max": 8.997128999908455,
+        "mean": 0.7905341278333904
+      },
+      "service_time": {
+        "n": 1963,
+        "p50": 18.161018000682816,
+        "p95": 20.739285099625704,
+        "p99": 24.38330781984404,
+        "max": 35.49399700023059,
+        "mean": 17.358239206316885
+      }
+    },
+    "high": {
+      "e2e": {
+        "n": 5248,
+        "p50": 14.923990316674463,
+        "p95": 23.359982210968155,
+        "p99": 30.36760738967129,
+        "max": 43.314266615197994,
+        "mean": 16.671258172660426
+      },
+      "queueing_delay": {
+        "n": 5248,
+        "p50": 0.5822829998578527,
+        "p95": 7.510425249984097,
+        "p99": 13.35550535062788,
+        "max": 29.251734998979373,
+        "mean": 1.4926812622019685
+      },
+      "service_time": {
+        "n": 5248,
+        "p50": 13.927238999713154,
+        "p95": 19.702063650311175,
+        "p99": 21.183129349992665,
+        "max": 32.015280001360225,
+        "mean": 15.043626633574096
+      }
+    },
+    "low2": {
+      "e2e": {
+        "n": 2093,
+        "p50": 18.813880200468702,
+        "p95": 21.561702636245172,
+        "p99": 22.73929166811285,
+        "max": 30.727938674317556,
+        "mean": 17.939231090041144
+      },
+      "queueing_delay": {
+        "n": 2093,
+        "p50": 0.7692320014029974,
+        "p95": 1.0576266005955404,
+        "p99": 1.212353121300111,
+        "max": 14.96192800004792,
+        "mean": 0.7931508801001074
+      },
+      "service_time": {
+        "n": 2093,
+        "p50": 17.941843001608504,
+        "p95": 20.40322639986698,
+        "p99": 21.450696759566195,
+        "max": 29.847394998796517,
+        "mean": 16.993305504515536
+      }
+    }
+  },
+  "throughput_by_phase": {
+    "low1": {
+      "n_offered": 1963,
+      "n_completed_total": 1963,
+      "n_completed_within_phase_window": 1963,
+      "rate_per_s_within_phase_window": 39.26,
+      "phase_window_s": 50.0
+    },
+    "high": {
+      "n_offered": 5248,
+      "n_completed_total": 5248,
+      "n_completed_within_phase_window": 5244,
+      "rate_per_s_within_phase_window": 131.1,
+      "phase_window_s": 40.0
+    },
+    "low2": {
+      "n_offered": 2093,
+      "n_completed_total": 2093,
+      "n_completed_within_phase_window": 2092,
+      "rate_per_s_within_phase_window": 41.84,
+      "phase_window_s": 50.0
+    }
+  },
+  "latency_ms": {
+    "e2e": {
+      "n": 9304,
+      "p50": 16.37379767089442,
+      "p95": 22.161587956452422,
+      "p99": 28.255823844283366,
+      "max": 43.314266615197994,
+      "mean": 17.301050144651416
+    },
+    "queueing_delay": {
+      "n": 9304,
+      "p50": 0.6731334997311933,
+      "p95": 4.985645549913899,
+      "p99": 11.430718980682284,
+      "max": 29.251734998979373,
+      "mean": 1.1871748225518488,
+      "note": "enqueue_ts to execution_start; includes generator-to-worker IPC transit (pickle/pipe/unpickle/wake), not pure wait -- see docs \u00a79 and scripts/measure_ipc_floor.py for a dedicated unloaded decomposition"
+    },
+    "service_time": {
+      "n": 9304,
+      "p50": 14.68185049998283,
+      "p95": 20.29590889960673,
+      "p99": 21.78304429118724,
+      "max": 35.49399700023059,
+      "mean": 15.970567987526648
+    },
+    "generator_delay": {
+      "n": 9304,
+      "p50": 0.1326246210737736,
+      "p95": 0.2571524247287016,
+      "p99": 0.3513511437631668,
+      "max": 0.8238597256422509,
+      "mean": 0.14330733457292125
+    },
+    "input_prep_ms": {
+      "n": 9304,
+      "p50": 0.009777999366633594,
+      "p95": 0.017215699972439324,
+      "p99": 0.02277883053466203,
+      "max": 0.209447000088403,
+      "mean": 0.010374523421883806
+    }
+  },
+  "throughput": {
+    "completed_within_nominal_window": {
+      "count": 9303,
+      "rate_per_s": 66.45,
+      "window_s": 140.0,
+      "definition": "count of COMPLETED with completion_ts <= run_start + duration_s_nominal, divided by duration_s_nominal"
+    },
+    "completed_including_drain": {
+      "count": 9304,
+      "rate_per_s": 66.47636567760249,
+      "window_s": 139.95951651633004,
+      "definition": "len(COMPLETED) / (last completion_ts - first scheduled arrival), includes post-window drain-time completions"
+    }
+  },
+  "measurement_window": {
+    "run_wall_start_monotonic": 16249.867122018,
+    "generator_finished_scheduling_at_monotonic": 16389.855090132,
+    "first_scheduled_arrival_monotonic": 16249.915321135672,
+    "last_scheduled_arrival_monotonic": 16389.854826052007,
+    "nominal_window_end_monotonic": 16389.867122018,
+    "first_completion_ts_monotonic": 16249.93426052,
+    "last_completion_ts_monotonic": 16389.874837652
+  },
+  "fifo_order_check": null,
+  "generator_affinity_checks": {
+    "pre_loop": {
+      "initial_violations": [
+        {
+          "tid": "35356",
+          "comm": "python",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "35381",
+          "comm": "Thread-1 (colle",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        },
+        {
+          "tid": "35382",
+          "comm": "Thread-2 (resou",
+          "expected": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_violations": []
+    },
+    "post_loop": {
+      "initial_violations": [],
+      "post_fix_violations": []
+    }
+  },
+  "worker_readiness": {
+    "2": {
+      "pid": 35362,
+      "warmup_ms": 111.2926019995939,
+      "initial_affinity_violations": [
+        {
+          "tid": "35368",
+          "comm": "python",
+          "expected": [
+            4,
+            5
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "1": {
+      "pid": 35361,
+      "warmup_ms": 107.78565799955686,
+      "initial_affinity_violations": [
+        {
+          "tid": "35370",
+          "comm": "python",
+          "expected": [
+            2,
+            3
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "0": {
+      "pid": 35360,
+      "warmup_ms": 114.23959400053718,
+      "initial_affinity_violations": [
+        {
+          "tid": "35369",
+          "comm": "python",
+          "expected": [
+            0,
+            1
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    },
+    "3": {
+      "pid": 35363,
+      "warmup_ms": 110.4703380005958,
+      "initial_affinity_violations": [
+        {
+          "tid": "35367",
+          "comm": "python",
+          "expected": [
+            6,
+            7
+          ],
+          "actual": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "raw": "0-39"
+        }
+      ],
+      "post_fix_affinity_violations": []
+    }
+  },
+  "worker_rss_kb": {
+    "before": {
+      "2": 105732,
+      "1": 105732,
+      "0": 106052,
+      "3": 106232
+    },
+    "peak_observed": {
+      "2": 113092,
+      "1": 113092,
+      "0": 113092,
+      "3": 112952
+    }
+  },
+  "host_snapshot": {
+    "before": {
+      "loadavg_1_5_15": [
+        4.9833984375,
+        3.55810546875,
+        1.7373046875
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 29781712,
+        "MemAvailable": 30035968,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    },
+    "after": {
+      "loadavg_1_5_15": [
+        4.2685546875,
+        3.8232421875,
+        2.09423828125
+      ],
+      "meminfo_kb": {
+        "MemTotal": 32706388,
+        "MemFree": 30079868,
+        "MemAvailable": 30334780,
+        "SwapTotal": 8388608,
+        "SwapFree": 8388608
+      }
+    }
+  },
+  "workers_terminated_past_drain_deadline": [],
+  "monotonic_clock_resolution_us": 0.001,
+  "note_ipc_floor": "This summary intentionally does NOT report an IPC-floor estimate -- queueing_delay under load is not a valid proxy for it (2026-09-17 review). Use scripts/measure_ipc_floor.py for a dedicated unloaded measurement, which itself is now reported as 'IPC + queue wake-up overhead', not 'pure IPC' (round 2 review correction).",
+  "note_clock": "All timestamps (generator and worker processes) use time.monotonic(), which on CPython/Linux is backed by the system-wide CLOCK_MONOTONIC and is therefore comparable across processes on this platform."
+}

@@ -1,0 +1,21 @@
+{
+  "based_on": "results/calibration/calibration_summary.csv (tuning split, seed=100, 6s probes)",
+  "observed_saturation_points_req_per_s": {
+    "W1T8": "between 100 and 150 -- throughput plateaus at ~117/s from rate=150 onward, e2e p50 jumps from 27ms (rate=100) to 786ms (rate=150)",
+    "W2T4": "between 150 and 220 -- throughput still scaling at 150 (148/s), plateaus at ~181/s by 220",
+    "W4T2": "not reached by 220 -- throughput=214/s at rate=220, queueing delay p50 still only 6.7ms",
+    "W8T1": "not reached by 220 -- throughput=213.5/s at rate=220, queueing delay p50 still only 1.4ms"
+  },
+  "notable_low_load_finding": "At rate=30 (clearly sub-saturating for all 4 configs), e2e p50 latency is LOWEST for W1T8 (12.6ms) and increases monotonically with worker count (W2T4=14.4ms, W4T2=21.3ms, W8T1=32.5ms). This is the opposite ranking from capacity: W1T8 has the best single-request latency but the worst saturation point, W4T2/W8T1 have the best capacity but worse best-case latency. This is exactly the fewer-workers-more-threads vs more-workers-fewer-threads trade-off the pilot's research question is about, not assumed -- observed directly in calibration data.",
+  "frozen_rate_set_req_per_s": {
+    "low": 40,
+    "medium": 90,
+    "stress": 130
+  },
+  "rationale": {
+    "low": "well below every config's saturation point (all 4 configs were comfortably keeping up through rate=60 in calibration) -- establishes a common unloaded baseline.",
+    "medium": "close to W1T8's capacity (which starts showing real queueing strain by rate=100: p50 27ms vs 12.6ms at rate=30) while still comfortably sub-saturating for W2T4/W4T2/W8T1 -- a differentiating but not yet catastrophic load level.",
+    "stress": "above W1T8's observed saturation point (~117/s) so W1T8 is expected to show real backlog/TIMED_OUT/UNFINISHED outcomes, while remaining below W2T4's/W4T2's/W8T1's observed capacity at this rate -- this is the rate expected to make different configs 'win' differently, which is exactly what go/no-go criterion 1 needs evidence on."
+  },
+  "not_yet_covered": "This calibration only probed STEADY arrivals. Sustained load-change and burst patterns (docs/pilot_config_matrix.md §5, patterns 2-3) still need their own calibration/implementation before they can be included in a matched sweep -- out of scope for this pass, which implements pattern 1 (steady arrivals) only."
+}

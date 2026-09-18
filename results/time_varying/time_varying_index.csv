@@ -1,0 +1,13 @@
+kind,run_id,config,trace_file,out_dir,n_requests,n_completed,run_valid,e2e_p50_ms,e2e_p95_ms,e2e_p99_ms,elapsed_s
+burst,burst_0.5s_W2T4,W2T4,models/traces/burst_0.5s.json,results/time_varying/burst_0.5s_W2T4,2830,2830,True,12.950205297784123,25.184181605163754,45.73372692133489,61.11473107337952
+sustained,sustained_W4T2_seed40001,W4T2,models/traces/sustained_seed40001.json,results/time_varying/sustained_W4T2_seed40001,9211,9211,True,16.715287098122644,21.716679837481934,27.517943021666717,141.2223198413849
+burst,burst_10.0s_W2T4,W2T4,models/traces/burst_10.0s.json,results/time_varying/burst_10.0s_W2T4,11097,11097,True,13.171480159144267,30.351125419474517,43.21456068253607,171.20421147346497
+sustained,sustained_W4T2_seed40002,W4T2,models/traces/sustained_seed40002.json,results/time_varying/sustained_W4T2_seed40002,9304,9304,True,16.37379767089442,22.161587956452422,28.255823844283366,141.23191905021667
+sustained,sustained_W2T4_seed40002,W2T4,models/traces/sustained_seed40002.json,results/time_varying/sustained_W2T4_seed40002,9304,9304,True,13.216610333984136,29.241550602637293,44.643869603678446,141.18260216712952
+burst,burst_2.0s_W4T2,W4T2,models/traces/burst_2.0s.json,results/time_varying/burst_2.0s_W4T2,4810,4810,True,16.831859727972187,21.749073997671076,26.804239572011266,76.20584082603455
+burst,burst_0.1s_W2T4,W2T4,models/traces/burst_0.1s.json,results/time_varying/burst_0.1s_W2T4,2298,2298,True,12.536588987131836,17.440489787077244,25.972460894336113,57.0550582408905
+burst,burst_0.5s_W4T2,W4T2,models/traces/burst_0.5s.json,results/time_varying/burst_0.5s_W4T2,2830,2830,True,18.646397989869,21.815286336641293,26.125115847680725,61.158297538757324
+sustained,sustained_W2T4_seed40001,W2T4,models/traces/sustained_seed40001.json,results/time_varying/sustained_W2T4_seed40001,9211,9211,True,13.42444643159979,32.001585263060406,54.370281161391176,141.17138624191284
+burst,burst_2.0s_W2T4,W2T4,models/traces/burst_2.0s.json,results/time_varying/burst_2.0s_W2T4,4810,4810,True,13.262125381515943,30.4580255988185,63.32817576167144,76.05609393119812
+burst,burst_10.0s_W4T2,W4T2,models/traces/burst_10.0s.json,results/time_varying/burst_10.0s_W4T2,11097,11097,True,16.757968558522407,21.75358639869955,25.543898411560793,171.2494773864746
+burst,burst_0.1s_W4T2,W4T2,models/traces/burst_0.1s.json,results/time_varying/burst_0.1s_W4T2,2298,2298,True,19.371303909792914,21.68888373507798,23.773062215768757,57.10151767730713

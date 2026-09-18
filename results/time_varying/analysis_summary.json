@@ -1,0 +1,1015 @@
+{
+  "deadline_ms_set": [
+    25,
+    50,
+    100
+  ],
+  "sustained": {
+    "sustained_W4T2_seed40001": {
+      "config": "W4T2",
+      "by_phase": {
+        "high": {
+          "n_requests": 5229,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 5229,
+              "n_missed": 143,
+              "missed_fraction": 0.02734748517881048
+            },
+            "50": {
+              "n_offered": 5229,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 5229,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low1": {
+          "n_requests": 1990,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1990,
+              "n_missed": 16,
+              "missed_fraction": 0.008040201005025126
+            },
+            "50": {
+              "n_offered": 1990,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1990,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low2": {
+          "n_requests": 1992,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1992,
+              "n_missed": 4,
+              "missed_fraction": 0.002008032128514056
+            },
+            "50": {
+              "n_offered": 1992,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1992,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 9211,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 9211,
+            "n_missed": 163,
+            "missed_fraction": 0.017696232765172078
+          },
+          "50": {
+            "n_offered": 9211,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 9211,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "sustained_W4T2_seed40002": {
+      "config": "W4T2",
+      "by_phase": {
+        "high": {
+          "n_requests": 5248,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 5248,
+              "n_missed": 182,
+              "missed_fraction": 0.03467987804878049
+            },
+            "50": {
+              "n_offered": 5248,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 5248,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low1": {
+          "n_requests": 1963,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1963,
+              "n_missed": 25,
+              "missed_fraction": 0.01273560876209883
+            },
+            "50": {
+              "n_offered": 1963,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1963,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low2": {
+          "n_requests": 2093,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2093,
+              "n_missed": 5,
+              "missed_fraction": 0.0023889154323936935
+            },
+            "50": {
+              "n_offered": 2093,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2093,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 9304,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 9304,
+            "n_missed": 212,
+            "missed_fraction": 0.022785898538263114
+          },
+          "50": {
+            "n_offered": 9304,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 9304,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "sustained_W2T4_seed40002": {
+      "config": "W2T4",
+      "by_phase": {
+        "high": {
+          "n_requests": 5248,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 5248,
+              "n_missed": 709,
+              "missed_fraction": 0.13509908536585366
+            },
+            "50": {
+              "n_offered": 5248,
+              "n_missed": 44,
+              "missed_fraction": 0.008384146341463415
+            },
+            "100": {
+              "n_offered": 5248,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low1": {
+          "n_requests": 1963,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1963,
+              "n_missed": 7,
+              "missed_fraction": 0.003565970453387672
+            },
+            "50": {
+              "n_offered": 1963,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1963,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low2": {
+          "n_requests": 2093,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2093,
+              "n_missed": 1,
+              "missed_fraction": 0.00047778308647873863
+            },
+            "50": {
+              "n_offered": 2093,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2093,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 9304,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 9304,
+            "n_missed": 717,
+            "missed_fraction": 0.07706362854686157
+          },
+          "50": {
+            "n_offered": 9304,
+            "n_missed": 44,
+            "missed_fraction": 0.004729148753224419
+          },
+          "100": {
+            "n_offered": 9304,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "sustained_W2T4_seed40001": {
+      "config": "W2T4",
+      "by_phase": {
+        "high": {
+          "n_requests": 5229,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 5229,
+              "n_missed": 927,
+              "missed_fraction": 0.17728055077452667
+            },
+            "50": {
+              "n_offered": 5229,
+              "n_missed": 123,
+              "missed_fraction": 0.023522662076878944
+            },
+            "100": {
+              "n_offered": 5229,
+              "n_missed": 1,
+              "missed_fraction": 0.00019124115509657678
+            }
+          }
+        },
+        "low1": {
+          "n_requests": 1990,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1990,
+              "n_missed": 14,
+              "missed_fraction": 0.007035175879396985
+            },
+            "50": {
+              "n_offered": 1990,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1990,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "low2": {
+          "n_requests": 1992,
+          "deadline_misses": {
+            "25": {
+              "n_offered": 1992,
+              "n_missed": 5,
+              "missed_fraction": 0.0025100401606425703
+            },
+            "50": {
+              "n_offered": 1992,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 1992,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 9211,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 9211,
+            "n_missed": 946,
+            "missed_fraction": 0.10270328954510911
+          },
+          "50": {
+            "n_offered": 9211,
+            "n_missed": 123,
+            "missed_fraction": 0.013353598957767887
+          },
+          "100": {
+            "n_offered": 9211,
+            "n_missed": 1,
+            "missed_fraction": 0.00010856584518510477
+          }
+        }
+      }
+    }
+  },
+  "burst": {
+    "burst_0.5s_W2T4": {
+      "config": "W2T4",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 646,
+          "n_completed_pooled": 646,
+          "e2e_latency_ms_pooled": {
+            "n": 646,
+            "p50": 13.688419640857319,
+            "p95": 43.39870393096135,
+            "p99": 62.19391474360235,
+            "max": 76.69180755510752,
+            "mean": 18.45471171117179
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 646,
+              "n_missed": 131,
+              "missed_fraction": 0.20278637770897834
+            },
+            "50": {
+              "n_offered": 646,
+              "n_missed": 22,
+              "missed_fraction": 0.034055727554179564
+            },
+            "100": {
+              "n_offered": 646,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 12.757888523992733,
+            "p95": 16.56036523500006,
+            "p99": 22.40837487204772,
+            "max": 41.43985252630955,
+            "mean": 12.801683622565145
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 15,
+              "missed_fraction": 0.006868131868131868
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 2830,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 2830,
+            "n_missed": 146,
+            "missed_fraction": 0.051590106007067135
+          },
+          "50": {
+            "n_offered": 2830,
+            "n_missed": 22,
+            "missed_fraction": 0.0077738515901060075
+          },
+          "100": {
+            "n_offered": 2830,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_10.0s_W2T4": {
+      "config": "W2T4",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 6412,
+          "n_completed_pooled": 6412,
+          "e2e_latency_ms_pooled": {
+            "n": 6412,
+            "p50": 14.104171377766761,
+            "p95": 35.14232331626771,
+            "p99": 46.81004809794107,
+            "max": 70.56506195476686,
+            "mean": 17.235753120102352
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 6412,
+              "n_missed": 990,
+              "missed_fraction": 0.1543980037429819
+            },
+            "50": {
+              "n_offered": 6412,
+              "n_missed": 38,
+              "missed_fraction": 0.005926388022457892
+            },
+            "100": {
+              "n_offered": 6412,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 4685,
+          "n_completed_pooled": 4685,
+          "e2e_latency_ms_pooled": {
+            "n": 4685,
+            "p50": 12.284356109375949,
+            "p95": 16.73010520571552,
+            "p99": 21.788060018734537,
+            "max": 63.905649698426714,
+            "mean": 12.574922791682106
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 4685,
+              "n_missed": 14,
+              "missed_fraction": 0.0029882604055496264
+            },
+            "50": {
+              "n_offered": 4685,
+              "n_missed": 1,
+              "missed_fraction": 0.00021344717182497332
+            },
+            "100": {
+              "n_offered": 4685,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 11097,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 11097,
+            "n_missed": 1004,
+            "missed_fraction": 0.09047490312697125
+          },
+          "50": {
+            "n_offered": 11097,
+            "n_missed": 39,
+            "missed_fraction": 0.003514463368477967
+          },
+          "100": {
+            "n_offered": 11097,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_2.0s_W4T2": {
+      "config": "W4T2",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 2626,
+          "n_completed_pooled": 2626,
+          "e2e_latency_ms_pooled": {
+            "n": 2626,
+            "p50": 14.785461951760226,
+            "p95": 22.035989663891087,
+            "p99": 28.927739303071576,
+            "max": 39.86960697147879,
+            "mean": 16.47576827548015
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2626,
+              "n_missed": 60,
+              "missed_fraction": 0.02284843869002285
+            },
+            "50": {
+              "n_offered": 2626,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2626,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 19.193602312952862,
+            "p95": 21.6601415491823,
+            "p99": 23.196814642615216,
+            "max": 34.35607892970438,
+            "mean": 18.417800261948074
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 12,
+              "missed_fraction": 0.005494505494505495
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 4810,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 4810,
+            "n_missed": 72,
+            "missed_fraction": 0.01496881496881497
+          },
+          "50": {
+            "n_offered": 4810,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 4810,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_0.1s_W2T4": {
+      "config": "W2T4",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 114,
+          "n_completed_pooled": 114,
+          "e2e_latency_ms_pooled": {
+            "n": 114,
+            "p50": 13.71113156346837,
+            "p95": 39.636030219662636,
+            "p99": 46.34319557375421,
+            "max": 47.32935136053129,
+            "mean": 16.798335195218034
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 114,
+              "n_missed": 14,
+              "missed_fraction": 0.12280701754385964
+            },
+            "50": {
+              "n_offered": 114,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 114,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 12.49013024425949,
+            "p95": 16.673259664094072,
+            "p99": 21.768725875517717,
+            "max": 36.77892517953296,
+            "mean": 12.659087968416486
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 13,
+              "missed_fraction": 0.005952380952380952
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 2298,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 2298,
+            "n_missed": 27,
+            "missed_fraction": 0.01174934725848564
+          },
+          "50": {
+            "n_offered": 2298,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 2298,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_0.5s_W4T2": {
+      "config": "W4T2",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 646,
+          "n_completed_pooled": 646,
+          "e2e_latency_ms_pooled": {
+            "n": 646,
+            "p50": 15.053595621793647,
+            "p95": 23.857576344198606,
+            "p99": 27.906008450918296,
+            "max": 31.292830732127186,
+            "mean": 16.80194776868444
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 646,
+              "n_missed": 25,
+              "missed_fraction": 0.03869969040247678
+            },
+            "50": {
+              "n_offered": 646,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 646,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 19.098463913906016,
+            "p95": 21.760158498909732,
+            "p99": 24.843974359173455,
+            "max": 32.57184633548604,
+            "mean": 18.339327721475588
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 20,
+              "missed_fraction": 0.009157509157509158
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 2830,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 2830,
+            "n_missed": 45,
+            "missed_fraction": 0.015901060070671377
+          },
+          "50": {
+            "n_offered": 2830,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 2830,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_2.0s_W2T4": {
+      "config": "W2T4",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 2626,
+          "n_completed_pooled": 2626,
+          "e2e_latency_ms_pooled": {
+            "n": 2626,
+            "p50": 13.843420156263164,
+            "p95": 37.949786913486605,
+            "p99": 76.23592435902538,
+            "max": 96.42706406521029,
+            "mean": 17.871781594530102
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2626,
+              "n_missed": 396,
+              "missed_fraction": 0.1507996953541508
+            },
+            "50": {
+              "n_offered": 2626,
+              "n_missed": 87,
+              "missed_fraction": 0.03313023610053313
+            },
+            "100": {
+              "n_offered": 2626,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 12.746324600811931,
+            "p95": 16.503109403674898,
+            "p99": 21.873388903441082,
+            "max": 30.788382555329008,
+            "mean": 12.827233325697641
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 9,
+              "missed_fraction": 0.004120879120879121
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 4810,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 4810,
+            "n_missed": 405,
+            "missed_fraction": 0.0841995841995842
+          },
+          "50": {
+            "n_offered": 4810,
+            "n_missed": 87,
+            "missed_fraction": 0.01808731808731809
+          },
+          "100": {
+            "n_offered": 4810,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_10.0s_W4T2": {
+      "config": "W4T2",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 6412,
+          "n_completed_pooled": 6412,
+          "e2e_latency_ms_pooled": {
+            "n": 6412,
+            "p50": 14.850416693661828,
+            "p95": 21.920641460383194,
+            "p99": 26.833167057848204,
+            "max": 37.35162946395576,
+            "mean": 16.42845960860295
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 6412,
+              "n_missed": 122,
+              "missed_fraction": 0.019026824703680598
+            },
+            "50": {
+              "n_offered": 6412,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 6412,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 4685,
+          "n_completed_pooled": 4685,
+          "e2e_latency_ms_pooled": {
+            "n": 4685,
+            "p50": 19.42499598953873,
+            "p95": 21.720948694564868,
+            "p99": 22.78733596976963,
+            "max": 35.32318170982762,
+            "mean": 18.50607357836983
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 4685,
+              "n_missed": 11,
+              "missed_fraction": 0.0023479188900747067
+            },
+            "50": {
+              "n_offered": 4685,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 4685,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 11097,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 11097,
+            "n_missed": 133,
+            "missed_fraction": 0.011985221230963324
+          },
+          "50": {
+            "n_offered": 11097,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 11097,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    },
+    "burst_0.1s_W4T2": {
+      "config": "W4T2",
+      "pooled_by_group": {
+        "burst": {
+          "n_requests_offered_pooled": 114,
+          "n_completed_pooled": 114,
+          "e2e_latency_ms_pooled": {
+            "n": 114,
+            "p50": 16.467163752167835,
+            "p95": 21.27787104982417,
+            "p99": 24.211200763711542,
+            "max": 27.464937906188425,
+            "mean": 17.241054159073922
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 114,
+              "n_missed": 1,
+              "missed_fraction": 0.008771929824561403
+            },
+            "50": {
+              "n_offered": 114,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 114,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        },
+        "baseline": {
+          "n_requests_offered_pooled": 2184,
+          "n_completed_pooled": 2184,
+          "e2e_latency_ms_pooled": {
+            "n": 2184,
+            "p50": 19.44700107924291,
+            "p95": 21.689431268714543,
+            "p99": 23.64080423645647,
+            "max": 31.404329569340916,
+            "mean": 18.58138533551747
+          },
+          "deadline_misses": {
+            "25": {
+              "n_offered": 2184,
+              "n_missed": 13,
+              "missed_fraction": 0.005952380952380952
+            },
+            "50": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            },
+            "100": {
+              "n_offered": 2184,
+              "n_missed": 0,
+              "missed_fraction": 0.0
+            }
+          }
+        }
+      },
+      "whole_trace": {
+        "n_requests": 2298,
+        "deadline_misses": {
+          "25": {
+            "n_offered": 2298,
+            "n_missed": 14,
+            "missed_fraction": 0.006092254134029591
+          },
+          "50": {
+            "n_offered": 2298,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          },
+          "100": {
+            "n_offered": 2298,
+            "n_missed": 0,
+            "missed_fraction": 0.0
+          }
+        }
+      }
+    }
+  }
+}
