@@ -45,9 +45,9 @@ What we did find, and can support with data:
 
 More plots: [`results/plots/`](results/plots/). Full numeric detail, including every intermediate finding and correction along the way: [`results/REVIEW.md`](results/REVIEW.md) and [`docs/research_log.md`](docs/research_log.md).
 
-### Why we stopped here
+### Why i stopped here
 
-The project's own go/no-go plan ([`docs/pilot_config_matrix.md`](docs/pilot_config_matrix.md)) was to build a switching controller only if (1) different fixed configurations actually win under different traffic, (2) transition costs between configurations are small enough to matter, and (3) there's headroom above simply picking a strong fixed configuration. Criterion 1 held up under scrutiny (two rounds of independent review of the raw data, plus the higher-rigor recheck). We did not get far enough to test criterion 2 (transition cost) or criterion 3 (headroom above a fixed baseline) with enough confidence, and everywhere we looked, one fixed choice (W4T2) or the other (W2T4) already covered most of the observed trade-off — so a controller currently has a narrow, unproven case to make. We stopped rather than build a controller to chase a benefit we hadn't demonstrated.
+The project's own go/no-go plan ([`docs/pilot_config_matrix.md`](docs/pilot_config_matrix.md)) was to build a switching controller only if (1) different fixed configurations actually win under different traffic, (2) transition costs between configurations are small enough to matter, and (3) there's headroom above simply picking a strong fixed configuration. Criterion 1 held up under scrutiny (two rounds of independent review of the raw data, plus the higher-rigor recheck). I did not get far enough to test criterion 2 (transition cost) or criterion 3 (headroom above a fixed baseline) with enough confidence, and everywhere we looked, one fixed choice (W4T2) or the other (W2T4) already covered most of the observed trade-off — so a controller currently has a narrow, unproven case to make. I stopped rather than build a controller to chase a benefit we hadn't demonstrated.
 
 ## Hardware, OS, model, and runtime versions
 
@@ -151,6 +151,3 @@ Third-party components used, under their own licenses:
 - Model: [`sentence-transformers/all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) — Apache License 2.0, per its Hugging Face model card. Built on `nreimers/MiniLM-L6-H384-uncased`.
 - Libraries: ONNX Runtime (MIT), PyTorch (BSD-3-Clause), Hugging Face `transformers` and `sentence-transformers` (Apache License 2.0), NumPy (BSD-3-Clause) — see [`requirements.txt`](requirements.txt) for the full pinned dependency list and consult each project for its current license terms.
 
-## Acknowledgments
-
-Implementation, experiment design, and review for this project were done with the assistance of Anthropic's Claude Code (which wrote and iterated on the harness and analysis code and drafted documentation) and OpenAI's ChatGPT (which independently reviewed raw experiment logs and methodology across multiple rounds, catching several real measurement bugs that are documented and fixed in this repo's history). All findings and conclusions were checked against the actual data before being reported.
